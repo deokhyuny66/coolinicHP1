@@ -28,6 +28,16 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+ <link href="/assets/css/main/slides.css" rel="stylesheet" type="text/css">  
+ <link href="/assets/css/theme.css" rel="stylesheet">
+ <link href="/assets/lib/prismjs/prism.css" rel="stylesheet">
+ <link href="/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
+ <link href="/assets/css/detail/jquery.fancybox.min.css" rel="stylesheet">
+ <link href="/assets/css/detail/comm_detail.css" rel="stylesheet">
+ <link href="/assets/css/calc/commons.css" rel="stylesheet" type="text/css">
+ <link href="/assets/css/calc/est.css" rel="stylesheet" type="text/css">
+ <link href="/assets/css/calc/comm_calc.css" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
 <style>
 	table {
 		width: 100%;
@@ -37,100 +47,206 @@
 </style>
 </head>
 <body>
-<div>
-<h1>입력 내용</h1>
-	<table>
-		<tr>
-			<th>가로</th>
-			<th>세로</th>
-			<th>높이</th>
-			<th>저장품목</th>
-			<th>희망온도</th>
-			<th>출입구 형태</th>
-			<th>출입구 사이즈</th>
-			<th>구매형태</th>
-		</tr>
-		<tr>
-			<td>${wid}</td>
-			<td>${vert}</td>
-			<td>${heg}</td>
-			<td>${store}</td>
-			<td>${temper_type}</td>
-			<td>${mtype}</td>
-			<td>${msize}</td>
-			<td>${purchese}</td>
-		</tr>
-	</table>
-<br/><br/>
-<h1>견적서 내용 출력</h1>
-	<table>
-		<tr>
-			<th>바닥면적</th>
-			<th>전체면적</th>
-			<th>평수환산</th>
-			<th>용도</th>
-			<th>출입구</th>
-			<th>출입구 사이즈</th>
-			<th>구매형태</th>
-			<th>CDU</th>
-			<th>COOLER</th>
-			<th>콘트롤</th>
-			<th>팽창밸브</th>
-			<th>전자밸브</th>
-			<th>고압배관</th>
-			<th>저압배관</th>
-			<th>고압 보온재</th>
-			<th>저압 보온재</th>
-			<th>전원선</th>
-			<th>조작 보조선 01</th>
-			<th>조작 보조선 02</th>
-			<th>조작 보조선 03</th>
-			<th>엔지니어 수</th>
-			<th>공사 기간</th>
-		</tr>
-		<tr>
-			<td>${floor_area}</td>
-			<td>${total_area}</td>
-			<td>${pyls}</td>
-			<td>${store}</td>
-			<td>${mtype}</td>
-			<td>${msize}</td>
-			<td>${purchese}</td>
-		<c:forEach var="calcSettingEntity" items="${calcSettingEntity}">
-			<td>${calcSettingEntity.cdu}</td>
-			<td>${calcSettingEntity.cooler}</td>
-			<td>${calcSettingEntity.control}</td>
-			<td>${calcSettingEntity.ex_valve}</td>
-			<td>${calcSettingEntity.elec_valve}</td>
-			<td>${calcSettingEntity.high_piping}</td>
-			<td>${calcSettingEntity.row_piping}</td>
-			<td>${calcSettingEntity.high_lagging}</td>
-			<td>${calcSettingEntity.row_lagging}</td>
-			<td>${calcSettingEntity.power}</td>
-			<td>${calcSettingEntity.op_assis1}</td>
-			<td>${calcSettingEntity.op_assis2}</td>
-			<td>${calcSettingEntity.op_assis3}</td>
-			<td>${calcSettingEntity.engin_cnt}</td>
-			<td>${calcSettingEntity.construc_period}</td>
-		</c:forEach>
-		</tr>
-	</table>
-<br/><br/>
-<h1>금액</h1>
-	<table>
-		<tr>
-			<th>우레탄 판넬 가격</th>
-			<th>도어 금액</th>
-			<th>베이스</th>
-			<th>부자재</th>
-		</tr>
-		<tr>
-			<td>${panel_price}</td>
-			<td>${door_price}</td>
-			<td>${base_price}</td>
-			<td>${sub_price}</td>
-		</tr>
-	</table>
-</div>
+	<div class="page position-absolute t-0 w-100" id="service">
+        <div class="row no-gutters minh-100vh">
+          <div class="col-lg-9 order-1 order-lg-0 page-content pt-6 pt-lg-0">
+
+          <!-- ============================================-->
+          <!-- <section> begin ============================-->
+	      <section>
+	      <div id="wrapsv">
+			<header id="headersv" class="row_flex">
+    			<h2>AI 자동견적 계산기</h2>
+  			</header>
+			
+		  	<section id="sectionsv">
+   			<form action="/calc" name="rentalForm" id="rentalForm" method="post">
+   			
+   			<!-- container_content -->
+   			<div class="container_content">
+     			<div class="row_flex">
+       				<div class="addition" style="width:100%;">
+         				<div class="product_size product_info_item">
+	      					<h3>견적서 내용</h3>
+	      					<!-- <p><img src="/assets/img/calc/size_img.png" alt="빙고 컨테이너 이미지"></p> -->
+	           				<table id="20ftMasterList">
+		             			<th class="br_l">항목</th>
+					            <th colspan="3">세부내역</th>
+		             			<tr>
+					               	<td>바닥면적</td>
+					               	<td colspan="3">${floor_area}</td>
+					            </tr>
+					            <tr>
+					            	<td>전체면적</td>
+					            	<td colspan="3">${total_area}</td>
+					            </tr>
+					            <tr>
+					                <td>평수환산</td>
+					                <td colspan="3">${pyls}평</td>
+					            </tr>
+					            <tr>
+					                <td>용도</td>
+					                <td colspan="3">${store}</td>
+					            </tr>
+					            <tr>
+					                <td>출입구</td>
+					                <td colspan="3">${mtype}</td>
+					            </tr>
+					            <tr>
+					                <td>출입구사이즈</td>
+					                <td colspan="3">${msize}</td>
+					            </tr>
+					            <tr>
+					                <td>구매형태</td>
+					                <td colspan="3">${purchese}</td>
+					            </tr>
+					            <c:forEach var="calcSettingEntity" items="${calcSettingEntity}">
+					            <tr>
+					                <td>CDU</td>
+					                <td colspan="3">${calcSettingEntity.cdu}</td>
+					            </tr>
+					            <tr>
+					                <td>COOLER</td>
+					                <td colspan="3">${calcSettingEntity.cooler}</td>
+					            </tr>
+					            <tr>
+					                <td>콘트롤</td>
+					                <td colspan="3">${calcSettingEntity.control}</td>
+					            </tr>
+					            <tr>
+					                <td>팽창밸브</td>
+					                <td colspan="3">${calcSettingEntity.ex_valve}</td>
+					            </tr>
+					            <tr>
+					                <td>전자밸브</td>
+					                <td colspan="3">${calcSettingEntity.elec_valve}</td>
+					            </tr>
+					            <tr>
+					                <td>고압배관</td>
+					                <td colspan="3">${calcSettingEntity.high_piping}</td>
+					            </tr>
+					            <tr>
+					                <td>저압배관</td>
+					                <td colspan="3">${calcSettingEntity.row_piping}</td>
+					            </tr>
+					            <tr>
+					                <td>고압 보온재</td>
+					                <td colspan="3">${calcSettingEntity.high_lagging}</td>
+					            </tr>
+					            <tr>
+					                <td>저압 보온재</td>
+					                <td colspan="3">${calcSettingEntity.row_lagging}</td>
+					            </tr>
+					            <tr>
+					                <td>전원선</td>
+					                <td colspan="3">${calcSettingEntity.power}</td>
+					            </tr>
+					            <tr>
+					                <td>조작 보조선 1</td>
+					                <td colspan="3">${calcSettingEntity.op_assis1}</td>
+					            </tr>
+					            <tr>
+					                <td>조작 보조선 2</td>
+					                <td colspan="3">${calcSettingEntity.op_assis2}</td>
+					            </tr>
+					            <tr>
+					                <td>조작 보조선 3</td>
+					                <td colspan="3">${calcSettingEntity.op_assis3}</td>
+					            </tr>
+					            <tr>
+					                <td>엔지니어 수</td>
+					                <td colspan="3">${calcSettingEntity.engin_cnt}</td>
+					            </tr>
+					            <tr>
+					                <td>공사기간</td>
+					                <td colspan="3">${calcSettingEntity.construc_period}</td>
+					            </tr>
+					            </c:forEach>
+	           				</table>
+         				</div>
+         				<div class="product_size product_info_item">
+	      					<h3>견적서 금액</h3>
+	           				<table id="20ftMasterList">
+		             			<th class="br_l">항목</th>
+		             			<th colspan="3">견적금액<span>(단위:원)</span></th>
+		             			<tr>
+					               	<td>우레탄 판넬</td>
+					               	<td colspan="3">${panel_price}</td>
+					            </tr>
+					            <tr>
+					            	<td>도어</td>
+					            	<td colspan="3">${door_price}</td>
+					            </tr>
+					            <tr>
+					                <td>베이스</td>
+					                <td colspan="3">${base_price}</td>
+					            </tr>
+					            <tr>
+					                <td>부자재</td>
+					                <td colspan="3">${sub_price}</td>
+					            </tr>
+					            <tr>
+					                <th>총 금액</th>
+					                <th colspan="3">${total_price}</th>
+					            </tr>
+	           				</table>
+         				</div>
+        		      </div>
+        			  <!-- addition end -->
+                </div>
+            </div>	
+   		  <!-- container_content end -->
+    		</form> 
+      		  <footer class="footer" id="individually_footer">
+        	      <div class="footer_cont">
+          			  <!--calculator_box -->
+          			  <div class="calculator_box">
+            		      <div class="calculator_cont row_flex">
+              			      
+              				<!--calculator_cont01-->
+              				<div class="calculator_cont02 row_flex" style="justify-content: center">
+                				<input type="submit" id="btnSave1" value="다시 조회하기" style="width:40%;margin-right: 10px;" onClick="location.href='http://localhost:8080/#service'">
+                				<input type="submit" id="btnSave2" value="PDF 다운 및 신청하기" style="width:40%;">
+              				</div>
+              				<!--calculator_cont02-->
+            			</div>
+            			<!--calculator_cont end-->
+    
+            			<div class="notice" style="text-align: center;">
+              				<p>다음 금액은 부가세를 포함한 금액이며, 설치현장 환경에 따라 추가 비용(크레인, 지게차 등)이 발생할 수 있습니다.</p>
+            			</div>
+            			<!--notice-->
+          			</div>
+          			<!--calculator_box-->
+        		</div>
+      		</footer>
+	    	
+		    </section>
+			</div>
+            </section>
+
+            <footer class="page-footer">
+              <div class="bg-holder" style="background-image:url(/assets/img/sidebars/service.jpg);background-position: 0 41%; transform: scale(1.1);">
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <div class="row align-items-center">
+                    <div class="col-lg-6 text-lg-right mt-2 mt-lg-0"></div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+          <div class="col-lg-3 col-12 t-0 order-0 order-lg-1 position-absolute position-lg-relative" onclick="location.href='http://localhost:8080/'">
+            <div class="h-lg-100vh sticky-top py-4 sticky-area">
+              <div class="bg-holder" style="background-image:url(/assets/img/sidebars/service.jpg);">
+              </div>
+              <!--/.bg-holder-->
+
+              <h1 class="page-title">AI 자동견적</h1>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>

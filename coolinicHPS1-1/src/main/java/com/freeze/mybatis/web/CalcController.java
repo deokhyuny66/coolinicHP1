@@ -1,4 +1,5 @@
 package com.freeze.mybatis.web;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -26,13 +27,14 @@ public class CalcController {
 	@RequestMapping("/")
 	public String home() throws Exception {
 		return "nav-eight-item-four-column";
-	}	
+	}
 	
 	@SuppressWarnings("null")
 	@RequestMapping("/calc")
 	public String calc(HttpServletRequest request, Model model) throws Exception {
 		CalcInputEntity cmd = new CalcInputEntity();
 		List<CalcPriceEntity> calcPriceEntity = service.getCalcPrice();
+		DecimalFormat decFormat = new DecimalFormat("###,###");
 		String temper_type = null;
 		String msize = null;
 		String storeVal = null;
@@ -154,16 +156,18 @@ public class CalcController {
 		door_price = msize_price; //도어 가격
 		base_price = (int) (floor_area * Integer.parseInt(calcPriceEntity.get(0).getBase())); //베이스 가격
 		sub_price = (int) (total_area * Integer.parseInt(calcPriceEntity.get(0).getSub())); //부자재 가격
+		int total_price =  panel_price + door_price + base_price + sub_price;
 
 		temper_type = cmd.getTempVal().substring(0,2);
 		List<CalcSettingEntity> calcSettingEntity = service.getCalcSetting(pyls,temper_type);
 		
 		//Price Model
-		model.addAttribute("panel_price",panel_price);
-		model.addAttribute("door_price",door_price);
-		model.addAttribute("base_price",base_price);
-		model.addAttribute("sub_price",sub_price);
-		
+		model.addAttribute("panel_price",decFormat.format(panel_price));
+		model.addAttribute("door_price",decFormat.format(door_price));
+		model.addAttribute("base_price",decFormat.format(base_price));
+		model.addAttribute("sub_price",decFormat.format(sub_price));
+		model.addAttribute("total_price",decFormat.format(total_price));
+
 		//Setting Model
 		model.addAttribute("calcSettingEntity",calcSettingEntity);
 		
@@ -172,7 +176,7 @@ public class CalcController {
 		model.addAttribute("vert", cmd.getVertVal());
 		model.addAttribute("heg", cmd.getHegVal());
 		model.addAttribute("floor_area", floor_area);
-		model.addAttribute("total_area", total_area);
+		model.addAttribute("total_area", String.format("%.1f", total_area));
 		model.addAttribute("pyls", pyls);
 		model.addAttribute("store", cmd.getStoreVal());
 		model.addAttribute("temper_type", cmd.getTempVal());

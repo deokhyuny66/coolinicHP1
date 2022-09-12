@@ -20,7 +20,6 @@
 
     <link href="/assets/css/main/slides.css" rel="stylesheet" type="text/css">  
     <link href="/assets/css/theme.css" rel="stylesheet">
-    <link href="/assets/css/calc/commons.css" rel="stylesheet" type="text/css">
     <link href="/assets/lib/prismjs/prism.css" rel="stylesheet">
     <link href="/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
     <link href="/assets/css/detail/jquery.fancybox.min.css" rel="stylesheet">
@@ -29,6 +28,7 @@
     <link href="/assets/lib/remodal/remodal-default-theme.css" rel="stylesheet">
     <link href="/assets/lib/owl.carousel/owl.carousel.css" rel="stylesheet">
     <link href="/assets/css/detail/lightbox.min.css" rel="stylesheet">
+    <link href="/assets/css/calc/commons.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/calc/est.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/calc/comm_calc.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
@@ -700,7 +700,7 @@
               			      
               				<!--calculator_cont01-->
               				<div class="calculator_cont02 row_flex">
-                				<input type="submit" id="btnSave" value="예상 견적서 확인" onclick="calc()">
+                				<input type="submit" id="btnSave" value="견적서 확인" onclick="calc();">
               				</div>
               				<!--calculator_cont02-->
             			</div>
