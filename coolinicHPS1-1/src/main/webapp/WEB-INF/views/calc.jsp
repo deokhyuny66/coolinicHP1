@@ -9,19 +9,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> <!-- JSTL POM 추가 및 해당 라인 추가 -->
 <%
 	request.setCharacterEncoding("utf-8");
-	/* 2. 계산 처리 한 py,냉동구분으로 조건 던져서 DB 행 조회 결과 가져오기 */
-	//pyl , cmd.getTempVal() 
-	/* ModelAndView mav = new ModelAndView(); */
-	
-	/* mav.addObject("calcSettingList", calcSettingList); */
-	/* mav.setViewName("/home.html"); */
-	/* 
-		1. input 기본 값들로 계산 처리 O
-		1-1. DB INSERT O
-		2. 계산 처리 한 py,냉동구분으로 조건 던져서 DB 행 조회 결과 가져오기 O
-		3. 전체,바닥면적으로 조건 던져서 DB 행 조회 결과 가져오기
-		4. 결과 최종 값들 뿌리기 
-	*/
 %>
 <!DOCTYPE html>
 <html>
@@ -205,8 +192,8 @@
               			      
               				<!--calculator_cont01-->
               				<div class="calculator_cont02 row_flex" style="justify-content: center">
-                				<input type="submit" id="btnSave1" value="다시 조회하기" style="width:40%;margin-right: 10px;" onClick="location.href='http://localhost:8080/#service'">
-                				<input type="submit" id="btnSave2" value="PDF 다운 및 신청하기" style="width:40%;">
+                				<input type="submit" id="btnSave1" value="다시 조회" style="width:40%;margin-right: 10px;" onClick="location.href='http://localhost:8080/#service'">
+                				<input type="submit" id="btnSave2" value="견적서 내용으로 신청" style="width:40%;">
               				</div>
               				<!--calculator_cont02-->
             			</div>

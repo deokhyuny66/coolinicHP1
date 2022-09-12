@@ -32,12 +32,38 @@
     <link href="/assets/css/calc/est.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/calc/comm_calc.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <style>
 	@font-face {
 	    font-family: 'OTWelcomeBA';
 	    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');
 	    font-weight: normal;
 	    font-style: normal;
+	}
+	#loading {
+	  	width: 80%;
+	  	height: 100%;
+	  	top: 0;
+	  	left: 0;
+	  	position: fixed;
+	  	display: block;
+	  	opacity: 0.6;
+	  	background: #000;
+	  	z-index: 99;
+	  	text-align: center;
+	}
+	#loading > img {
+	  	position: absolute;
+	  	top: 50%;
+	  	left: 50%;
+	  	z-index: 100;
+	}
+	#loading > p {
+    	position: absolute;
+    	top: 57%;
+    	left: 43%;
+    	z-index: 101;
+    	font-color: #fff;
 	}
     </style>
     <script>
@@ -64,8 +90,9 @@
     
   	</head>
 <body>
-
     <main>
+      
+	  
       <!-- ============================================-->
       <!-- Preloader ==================================-->
       <div id="preloader">
@@ -100,7 +127,7 @@
                 <!--/.bg-holder-->
               </div>
               <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="service">
-                <div class="bg-holder" id="bg-holder-ai">
+                <div class="bg-holder" id="bg-holder-ai">	
                 </div><!-- AI 자동견적 -->
                 <!--/.bg-holder-->
               </div>
@@ -691,7 +718,6 @@
                 </div>
             </div>	
    		  <!-- container_content end -->
-    		  
       		  <footer class="footer" id="individually_footer">
         	      <div class="footer_cont">
           			  <!--calculator_box -->
@@ -699,7 +725,7 @@
             		      <div class="calculator_cont row_flex">
               			      
               				<!--calculator_cont01-->
-              				<div class="calculator_cont02 row_flex">
+              				<div id="btnloading" class="calculator_cont02 row_flex">
                 				<input type="submit" id="btnSave" value="견적서 확인" onclick="calc();">
               				</div>
               				<!--calculator_cont02-->
@@ -2622,8 +2648,22 @@
           </div>
         </div>
       </div> 
+      
+      <div id="loading" style="margin-left: 0px;">
+	    <img src="/assets/img/lodding.gif">
+	    <p style="color:#fff;">견적서 산출 중 입니다. 잠시 기다려주세요.</p>
+	  </div>
     </main>
 
+	<script>
+	 $(document).ready(function() {
+	    $('#loading').hide();
+	    $('#btnloading #btnSave').click(function(){
+	        $('#loading').show();
+	        return true;
+        });
+    });
+	</script>
 	<script src="/assets/js/detail/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.js"></script>
     <script src="/assets/js/plugins.js"></script>
