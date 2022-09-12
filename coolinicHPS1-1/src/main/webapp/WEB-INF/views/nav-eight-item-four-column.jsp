@@ -40,6 +40,27 @@
 	    font-style: normal;
 	}
     </style>
+    <script>
+    	function calc(){
+			var count = $('#store > option:selected').val();
+			var temperture = $('#temperture > option:selected').val();
+			var mtype = $('#mtype > option:selected').val();
+			var msize = $('#msize > option:selected').val();
+			var purchese = $('#purchese > option:selected').val();
+			
+			if(count==0){
+				document.getElementById("store").focus();
+			}else if(temperture==0){
+				document.getElementById("temperture").focus();
+			}else if(mtype==0){
+				document.getElementById("mtype").focus();
+			}else if(msize==0){
+				document.getElementById("msize").focus();
+			}else if(purchese==0){
+				document.getElementById("purchese").focus();
+			}
+    	}
+    </script>
     
   	</head>
 <body>
@@ -531,31 +552,8 @@
   			</header>
 			
 		  	<section id="sectionsv">
-<!-- 	   		<input type="hidden" name="estType" id="estType" value="RENTAL">
-	   			<input type="hidden" name="pSize" id="pSize" value="">
-	   			<input type="hidden" name="pOption" id="pOption" value="">
-	   			<input type="hidden" name="pPeriod" id="pPeriod" value="">
-	   			<input type="hidden" name="pModelYear" id="pModelYear" value="">
-	   			<input type="hidden" name="pArea" id="pArea" value="">
-	   			<input type="hidden" name="pQty" id="pQty" value="">
-				<input type="hidden" name="pOptionConcentric220" id="pOptionConcentric220" value="">
-	   			<input type="hidden" name="pOptionAirCurtain" id="pOptionAirCurtain" value="">
-	   			<input type="hidden" name="pOptionConcentric380" id="pOptionConcentric380" value="">
-	   			<input type="hidden" name="pOptionLogo" id="pOptionLogo" value="">   			
-	   			<input type="hidden" name="pSizePay" id="pSizePay" value="0">
-	   			<input type="hidden" name="pOptionPay" id="pOptionPay" value="0">
-	   			<input type="hidden" name="pOptionConcentric220Pay" id="pOptionConcentric220Pay" value="0">
-	   			<input type="hidden" name="pOptionAirCurtainPay" id="pOptionAirCurtainPay" value="0">
-	   			<input type="hidden" name="pOptionConcentric380Pay" id="pOptionConcentric380Pay" value="0">
-	   			<input type="hidden" name="pOptionLogoPay" id="pOptionLogoPay" value="0">
-	   			<input type="hidden" name="pPeriodPay" id="pPeriodPay" value="0">
-	   			<input type="hidden" name="pAreaPay" id="pAreaPay" value="0">
-	   			<input type="hidden" name="pModelYearPay" id="pModelYearPay" value="0">
-	   			<input type="hidden" name="pFastPay" id="pFastPay" value="0">
-	   			<input type="hidden" name="pTotalPay" id="pTotalPay" value="0">
-	   			<input type="hidden" name="pMonthPay" id="pMonthPay" value="0"> -->
-   			
    			<form action="/calc" name="rentalForm" id="rentalForm" method="post">
+   			
    			<!-- container_content -->
    			<div class="container_content">
      			<div class="row_flex">
@@ -628,17 +626,17 @@
          				<div class="cont_box tab_common_cont">
               					<h3>정보입력</h3>
               					<div class="item">
-                					<input type="text" name="wid" placeholder="가로">
+                					<input type="text" name="wid" placeholder="가로" required>
               					</div>
               					<div class="item">
-                					<input type="text" name="vert" placeholder="세로">
+                					<input type="text" name="vert" placeholder="세로" required>
               					</div>
               					<div class="item">
-                					<input type="text" name="heg" placeholder="높이">
+                					<input type="text" name="heg" placeholder="높이" required>
               					</div>
               					<div class="item">
-	              					<select name="store">
-								      <option selected disabled>저장품목</option>
+	              					<select id="store" name="store" required="required">
+								      <option value="0" selected disabled>저장품목</option>
 								      <option value="storelist01">어패류</option>
 								      <option value="storelist02">화훼류</option>
 								      <option value="storelist03">돈육</option>
@@ -649,8 +647,8 @@
 								   </select>
               					</div>
               					<div class="item">
-	              					<select name="temperture">
-								      <option selected disabled>희망온도</option>
+	              					<select id="temperture" name="temperture" required="required">
+								      <option value="0" selected disabled>희망온도</option>
 								      <option value="temp01">냉장(0 ~ 15℃)</option>
 								      <option value="temp02">냉동(0 ~ -20℃)</option>
 								      <option value="temp03">동결(-20 ~ -40℃)</option>
@@ -658,8 +656,8 @@
 								   </select>
               					</div>
               					<div class="item">
-	              					<select name="mtype">
-								      <option selected disabled>출입구형태</option>
+	              					<select id="mtype" name="mtype" required="required">
+								      <option value="0" selected disabled>출입구 형태</option>
 								      <option value="mtype01">오버랩 도어(일반 도어 타입)</option>
 								      <option value="mtype02">수동 슬라이드 편개(한쪽 열림)</option>
 								      <option value="mtype03">수동 슬라이드 양개(양쪽 열림)</option>
@@ -668,8 +666,8 @@
 								   </select>
               					</div>
               					<div class="item">
-	              					<select name="msize">
-								      <option selected disabled>출입구사이즈</option>
+	              					<select id="msize" name="msize" required="required">
+								      <option value="0" selected disabled>출입구 사이즈</option>
 								      <option value="msize01">평수에 맞게 스탠다드 적용</option>
 								      <option value="msize02">900*2100*100 (오버랩)</option>
 								      <option value="msize03">1000*2100*100 (오버랩)</option>
@@ -680,8 +678,8 @@
 								   </select>
               					</div>
               					<div class="item">
-	              					<select name="purchese">
-								      <option selected disabled>구매형태</option>
+	              					<select id="purchese" name="purchese" required="required">
+								      <option value="0" selected disabled>구매형태</option>
 								      <option value="purchese01">구입</option>
 								      <option value="purchese02">렌탈</option>
 								   </select>
@@ -702,7 +700,7 @@
               			      
               				<!--calculator_cont01-->
               				<div class="calculator_cont02 row_flex">
-                				<input type="submit" id="btnSave" value="예상 견적서 확인"><a href="#a"></a>
+                				<input type="submit" id="btnSave" value="예상 견적서 확인" onclick="calc()">
               				</div>
               				<!--calculator_cont02-->
             			</div>
