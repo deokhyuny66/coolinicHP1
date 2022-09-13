@@ -114,17 +114,17 @@ public class CalcController {
 		if(cmd.getMsizeVal().equals("msize01")){
 			cmd.setMsizeVal("평수에 맞게 스탠다드 적용");
 		}else if(cmd.getMsizeVal().equals("msize02")){
-			cmd.setMsizeVal("900*2100*100 (오버랩)");
+			cmd.setMsizeVal("900 x 2100 x 100 (오버랩)");
 		}else if(cmd.getMsizeVal().equals("msize03")){
-			cmd.setMsizeVal("1000*2100*100 (오버랩)");
+			cmd.setMsizeVal("1000 x 2100 x 100 (오버랩)");
 		}else if(cmd.getMsizeVal().equals("msize04")){
-			cmd.setMsizeVal("1200*2400*100 (슬라이드 / 편개)");
+			cmd.setMsizeVal("1200 x 2400 x 100 (슬라이드 / 편개)");
 		}else if(cmd.getMsizeVal().equals("msize05")){
-			cmd.setMsizeVal("1400*2600*100 (슬라이드 / 편개)");
+			cmd.setMsizeVal("1400 x 2600 x 100 (슬라이드 / 편개)");
 		}else if(cmd.getMsizeVal().equals("msize06")){
-			cmd.setMsizeVal("2400*2600*100 (슬라이드 / 양개)");
+			cmd.setMsizeVal("2400 x 2600 x 100 (슬라이드 / 양개)");
 		}else if(cmd.getMsizeVal().equals("msize07")){
-			cmd.setMsizeVal("2600*2800*100 (슬라이드 / 양개)");
+			cmd.setMsizeVal("2600 x 2800 x 100 (슬라이드 / 양개)");
 		}
 		
 		/* INPUT PURCHESE DATA */
@@ -169,7 +169,21 @@ public class CalcController {
 		model.addAttribute("total_price",decFormat.format(total_price));
 
 		//Setting Model
-		model.addAttribute("calcSettingEntity",calcSettingEntity);
+		model.addAttribute("cdu",calcSettingEntity.get(0).getCdu());
+		model.addAttribute("cooler",calcSettingEntity.get(0).getCooler());
+		model.addAttribute("control",calcSettingEntity.get(0).getControl());
+		model.addAttribute("ex_valve",calcSettingEntity.get(0).getEx_valve());
+		model.addAttribute("elec_valve",calcSettingEntity.get(0).getElec_valve());
+		model.addAttribute("high_piping",calcSettingEntity.get(0).getHigh_piping());
+		model.addAttribute("row_piping",calcSettingEntity.get(0).getRow_piping());
+		model.addAttribute("high_lagging",calcSettingEntity.get(0).getHigh_lagging());
+		model.addAttribute("row_lagging",calcSettingEntity.get(0).getRow_lagging());
+		model.addAttribute("power",calcSettingEntity.get(0).getPower());
+		model.addAttribute("op_assis1",calcSettingEntity.get(0).getOp_assis1());
+		model.addAttribute("op_assis2",calcSettingEntity.get(0).getOp_assis2());
+		model.addAttribute("op_assis3",calcSettingEntity.get(0).getOp_assis3());
+		model.addAttribute("engin_cnt",calcSettingEntity.get(0).getEngin_cnt());
+		model.addAttribute("construc_period",calcSettingEntity.get(0).getConstruc_period());
 		
 		//Input Model
 		model.addAttribute("wid", cmd.getWidVal());

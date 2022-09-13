@@ -31,6 +31,11 @@
 		border: 1px solid #ccc;
 		text-align: center;
 	}
+	
+	.blur {
+		filter: blur(4px);
+    	-webkit-filter: blur(4px);
+	}
 </style>
 </head>
 <body>
@@ -87,68 +92,66 @@
 					                <td>구매형태</td>
 					                <td colspan="3">${purchese}</td>
 					            </tr>
-					            <c:forEach var="calcSettingEntity" items="${calcSettingEntity}">
-					            <tr>
+					            <tr class="blur">
 					                <td>CDU</td>
-					                <td colspan="3">${calcSettingEntity.cdu}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>COOLER</td>
-					                <td colspan="3">${calcSettingEntity.cooler}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>콘트롤</td>
-					                <td colspan="3">${calcSettingEntity.control}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>팽창밸브</td>
-					                <td colspan="3">${calcSettingEntity.ex_valve}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>전자밸브</td>
-					                <td colspan="3">${calcSettingEntity.elec_valve}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>고압배관</td>
-					                <td colspan="3">${calcSettingEntity.high_piping}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>저압배관</td>
-					                <td colspan="3">${calcSettingEntity.row_piping}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>고압 보온재</td>
-					                <td colspan="3">${calcSettingEntity.high_lagging}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>저압 보온재</td>
-					                <td colspan="3">${calcSettingEntity.row_lagging}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>전원선</td>
-					                <td colspan="3">${calcSettingEntity.power}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>조작 보조선 1</td>
-					                <td colspan="3">${calcSettingEntity.op_assis1}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>조작 보조선 2</td>
-					                <td colspan="3">${calcSettingEntity.op_assis2}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>조작 보조선 3</td>
-					                <td colspan="3">${calcSettingEntity.op_assis3}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>엔지니어 수</td>
-					                <td colspan="3">${calcSettingEntity.engin_cnt}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            <tr>
+					            <tr class="blur">
 					                <td>공사기간</td>
-					                <td colspan="3">${calcSettingEntity.construc_period}</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
 					            </tr>
-					            </c:forEach>
 	           				</table>
          				</div>
          				<div class="product_size product_info_item">
@@ -172,6 +175,66 @@
 					                <td>부자재</td>
 					                <td colspan="3">${sub_price}</td>
 					            </tr>
+					            <tr class="blur">
+					                <td>CDU</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>COOLER</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>콘트롤</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>팽창밸브</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>전자밸브</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>고압배관</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>저압배관</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>고압 보온재</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>저압 보온재</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>전원선</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>조작 보조선 1</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>조작 보조선 2</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>조작 보조선 3</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>엔지니어 수</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
+					            <tr class="blur">
+					                <td>공사기간</td>
+					                <td colspan="3">상세 견적서 요청시 표기</td>
+					            </tr>
 					            <tr>
 					                <th>총 금액</th>
 					                <th colspan="3">${total_price}</th>
@@ -183,7 +246,7 @@
                 </div>
             </div>	
    		  <!-- container_content end -->
-    		</form> 
+    		 
       		  <footer class="footer" id="individually_footer">
         	      <div class="footer_cont">
           			  <!--calculator_box -->
@@ -193,7 +256,7 @@
               				<!--calculator_cont01-->
               				<div class="calculator_cont02 row_flex" style="justify-content: center">
                 				<input type="submit" id="btnSave1" value="다시 조회" style="width:40%;margin-right: 10px;" onClick="location.href='http://localhost:8080/#service'">
-                				<input type="submit" id="btnSave2" value="견적서 내용으로 신청" style="width:40%;">
+                				<input type="submit" id="btnSave2" value="상세 견적서 요청" style="width:40%;">
               				</div>
               				<!--calculator_cont02-->
             			</div>
@@ -207,7 +270,7 @@
           			<!--calculator_box-->
         		</div>
       		</footer>
-	    	
+	    	</form>
 		    </section>
 			</div>
             </section>

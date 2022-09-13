@@ -74,6 +74,23 @@
 			var msize = $('#msize > option:selected').val();
 			var purchese = $('#purchese > option:selected').val();
 			
+			//로딩 하이드가 안먹힘..
+			/* var inputValueVerts = document.getElementById('vert');
+			var inputValueVert = document.getElementById('vert').value;
+	 		var inputValueHeg = document.getElementById('heg').value;
+	 		var inputValueHegs = document.getElementById('heg');
+	 		var inputValueWids = document.getElementById('wid');
+	 		var inputValueWid = document.getElementById('wid').value;
+	 		
+	 		if(inputValueWids == null || inputValueWids == "" || inputValueWid == null || inputValueWid == ""){
+				$('#loading').hide();
+				document.getElementById("wid").focus();
+			}else if(inputValueHegs == null || inputValueHegs == "" || inputValueHeg == null || inputValueHeg == ""){
+				$('#loading').hide();
+			}else if(inputValueVerts == null || inputValueVerts == "" || inputValueVert == null || inputValueVert == ""){
+				$('#loading').hide();
+			}  */
+	 		
 			if(count==0){
 				document.getElementById("store").focus();
 			}else if(temperture==0){
@@ -85,11 +102,69 @@
 			}else if(purchese==0){
 				document.getElementById("purchese").focus();
 			}
+			
+			
+   			$('#loading').show();
+    			
+            
     	}
+    	
+    	function inputValueVertChange(){
+    		var inputValueVert = document.getElementById('vert').value;
+    		var inputValueVerts = document.getElementById('vert');
+    		const birthErrorMsgElVert = 
+      		  document.querySelector('.item .error-msg2');
+    		
+    		if(inputValueVert < 800){
+    			inputValueVerts.value = null;
+    			birthErrorMsgElVert.textContent = "최소 800 이상의 값을 입력하세요. 다시 확인해주세요."
+	   			document.getElementById('vert').focus();
+    		}else {
+    			birthErrorMsgElVert.textContent = "";
+    		}
+    	}
+    	
+    	function inputValueHegChange(){
+    		var inputValueHeg = document.getElementById('heg').value;
+    		var inputValueHegs = document.getElementById('heg');
+    		const birthErrorMsgElHeg = 
+      		  document.querySelector('.item .error-msg3');
+
+    		if(inputValueHeg < 800){
+    			inputValueHegs.value = null;
+    			birthErrorMsgElHeg.textContent = "최소 800 이상의 값을 입력하세요. 다시 확인해주세요."
+	   			document.getElementById('heg').focus();
+    		}else {
+    			birthErrorMsgElHeg.textContent = "";
+    		}
+    	}
+    	
+    	function inputValueWidChange(){
+    		var inputValueWid = document.getElementById('wid').value;
+    		var inputValueWids = document.getElementById('wid');
+    		const birthErrorMsgElWid = 
+      		  document.querySelector('.item .error-msg1');
+    		
+    		if(inputValueWid < 800){
+    			inputValueWids.value = null;
+    			birthErrorMsgElWid.textContent = "최소 800 이상의 값을 입력하세요. 다시 확인해주세요."
+	   			document.getElementById('wid').focus();
+    		}else{
+    			birthErrorMsgElWid.textContent = "";
+    		}
+    	}
+    	
+    	function onload(){
+    		const birthErrorMsgElSize = 
+      		  document.querySelector('.item .alert-msg');
+      		birthErrorMsgElSize.innerText = "가로 x 세로 x 도어 두께 (도어 타입)";	
+    	}
+    	
+    	
     </script>
     
   	</head>
-<body>
+<body onload="onload()">
     <main>
       
 	  
@@ -653,13 +728,16 @@
          				<div class="cont_box tab_common_cont">
               					<h3>정보입력</h3>
               					<div class="item">
-                					<input type="text" name="wid" placeholder="가로" required>
+                					<input type="text" id="wid" name="wid" placeholder="가로" onchange="inputValueWidChange();" required>
+              						<div class="error-msg1" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
               					</div>
               					<div class="item">
-                					<input type="text" name="vert" placeholder="세로" required>
+                					<input type="text" id="vert" name="vert" placeholder="세로" onchange="inputValueVertChange();" required>
+                					<div class="error-msg2" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
               					</div>
               					<div class="item">
-                					<input type="text" name="heg" placeholder="높이" required>
+                					<input type="text" id="heg" name="heg" placeholder="높이" onchange="inputValueHegChange();" required>
+                					<div class="error-msg3" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
               					</div>
               					<div class="item">
 	              					<select id="store" name="store" required="required">
@@ -696,13 +774,14 @@
 	              					<select id="msize" name="msize" required="required">
 								      <option value="0" selected disabled>출입구 사이즈</option>
 								      <option value="msize01">평수에 맞게 스탠다드 적용</option>
-								      <option value="msize02">900*2100*100 (오버랩)</option>
-								      <option value="msize03">1000*2100*100 (오버랩)</option>
-								      <option value="msize04">1200*2400*100 (슬라이드 / 편개)</option>
-								      <option value="msize05">1400*2600*100 (슬라이드 / 편개)</option>
-								      <option value="msize06">2400*2600*100 (슬라이드 / 양개)</option>
-								      <option value="msize07">2600*2800*100 (슬라이드 / 양개)</option>
+								      <option value="msize02">900 x 2100 x 100 (오버랩)</option>
+								      <option value="msize03">1000 x 2100 x 100 (오버랩)</option>
+								      <option value="msize04">1200 x 2400 x 100 (슬라이드 / 편개)</option>
+								      <option value="msize05">1400 x 2600 x 100 (슬라이드 / 편개)</option>
+								      <option value="msize06">2400 x 2600 x 100 (슬라이드 / 양개)</option>
+								      <option value="msize07">2600 x 2800 x 100 (슬라이드 / 양개)</option>
 								   </select>
+								   <div class="alert-msg" style="padding:5px 0 0 5px;font-size:12px;color:#999;background-color: #F4F7FF;"></div>
               					</div>
               					<div class="item">
 	              					<select id="purchese" name="purchese" required="required">
@@ -717,6 +796,8 @@
         			  <!-- addition end -->
                 </div>
             </div>	
+            
+            
    		  <!-- container_content end -->
       		  <footer class="footer" id="individually_footer">
         	      <div class="footer_cont">
@@ -2647,7 +2728,7 @@
             </div>
           </div>
         </div>
-      </div> 
+      </div>
       
       <div id="loading" style="margin-left: 0px;">
 	    <img src="/assets/img/lodding.gif">
@@ -2656,13 +2737,13 @@
     </main>
 
 	<script>
-	 $(document).ready(function() {
+	  $(document).ready(function() {
 	    $('#loading').hide();
-	    $('#btnloading #btnSave').click(function(){
-	        $('#loading').show();
-	        return true;
-        });
-    });
+	   /*  $('#btnloading #btnSave').click(function(){
+			$('#loading').show();
+			return true;
+        }); */
+    }); 
 	</script>
 	<script src="/assets/js/detail/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.js"></script>
