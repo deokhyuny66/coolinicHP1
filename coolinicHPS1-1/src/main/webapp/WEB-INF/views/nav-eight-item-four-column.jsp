@@ -67,47 +67,47 @@
 	}
     </style>
     <script>
-    	function calc(){
-			var count = $('#store > option:selected').val();
+    
+    	function submitCheck() {
+    		var count = $('#store > option:selected').val();
 			var temperture = $('#temperture > option:selected').val();
 			var mtype = $('#mtype > option:selected').val();
 			var msize = $('#msize > option:selected').val();
 			var purchese = $('#purchese > option:selected').val();
-			
-			//로딩 하이드가 안먹힘..
-			/* var inputValueVerts = document.getElementById('vert');
-			var inputValueVert = document.getElementById('vert').value;
-	 		var inputValueHeg = document.getElementById('heg').value;
-	 		var inputValueHegs = document.getElementById('heg');
-	 		var inputValueWids = document.getElementById('wid');
-	 		var inputValueWid = document.getElementById('wid').value;
-	 		
-	 		if(inputValueWids == null || inputValueWids == "" || inputValueWid == null || inputValueWid == ""){
-				$('#loading').hide();
-				document.getElementById("wid").focus();
-			}else if(inputValueHegs == null || inputValueHegs == "" || inputValueHeg == null || inputValueHeg == ""){
-				$('#loading').hide();
-			}else if(inputValueVerts == null || inputValueVerts == "" || inputValueVert == null || inputValueVert == ""){
-				$('#loading').hide();
-			}  */
+			var inputValueVert = $('#vert').val();
+	 		var inputValueHeg = $('#heg').val();
+	 		var inputValueWid = $('#wid').val();
 	 		
 			if(count==0){
-				document.getElementById("store").focus();
-			}else if(temperture==0){
-				document.getElementById("temperture").focus();
-			}else if(mtype==0){
-				document.getElementById("mtype").focus();
-			}else if(msize==0){
-				document.getElementById("msize").focus();
-			}else if(purchese==0){
-				document.getElementById("purchese").focus();
+				$("#store").focus();
+				return false;
 			}
-			
-			
-   			$('#loading').show();
-    			
-            
+
+			if(temperture==0){
+				alert("b");
+				$("#temperture").focus();
+				return false;
+			}
+
+			if(mtype==0){
+				$("#mtype").focus();
+				return false;
+			}
+
+			if(msize==0){
+				$("#msize").focus();
+				return false;
+			}
+
+			if(purchese==0){
+				$("#purchese").focus();
+				return false;
+			}else{
+				$('#loading').show();
+			}
+    	    return true;
     	}
+    	
     	
     	function inputValueVertChange(){
     		var inputValueVert = document.getElementById('vert').value;
@@ -654,7 +654,7 @@
   			</header>
 			
 		  	<section id="sectionsv">
-   			<form action="/calc" name="rentalForm" id="rentalForm" method="post">
+   			<form action="/calc" name="rentalForm" id="rentalForm" method="post" onsubmit="return submitCheck();">
    			
    			<!-- container_content -->
    			<div class="container_content">
@@ -807,7 +807,7 @@
               			      
               				<!--calculator_cont01-->
               				<div id="btnloading" class="calculator_cont02 row_flex">
-                				<input type="submit" id="btnSave" value="견적서 확인" onclick="calc();">
+                				<input type="submit" id="btnSave" value="견적서 확인">
               				</div>
               				<!--calculator_cont02-->
             			</div>
@@ -2737,13 +2737,14 @@
     </main>
 
 	<script>
-	  $(document).ready(function() {
-	    $('#loading').hide();
-	   /*  $('#btnloading #btnSave').click(function(){
+	$('#loading').hide();
+	  /* $(document).ready(function() { 
+	    
+	    $('#btnloading #btnSave').click(function(){
 			$('#loading').show();
 			return true;
-        }); */
-    }); 
+        });
+   });  */
 	</script>
 	<script src="/assets/js/detail/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.js"></script>
@@ -2764,5 +2765,6 @@
 	<script src="/assets/js/slides.js"></script>
 	<script src="/assets/js/main/swiper.min.js"></script>
   </body>
+  <iframe name='blankifr' style='display:none;'></iframe>
 
 </html>
