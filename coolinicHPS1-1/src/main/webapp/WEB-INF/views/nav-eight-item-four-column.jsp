@@ -664,9 +664,22 @@
          				<!-- product_size -->
 	         				<div class="product_size product_info_item">
 	      					<h3>저온창고 사이즈</h3>
-	      					<!-- <p><img src="/assets/img/calc/size_img.png" alt="빙고 컨테이너 이미지"></p> -->
-	      					<video src="/assets/video/coolinic.mp4" class="videoMp4-calc" autoplay muted loop controls></video>
-	           				<table id="20ftMasterList">
+	      					<!-- <video src="/assets/video/coolinic.mp4" class="videoMp4-calc" style="border-radius: 10px;" autoplay muted loop controls></video> -->
+	      					<div class="owl-carousel owl-theme owl-dots-inner owl-theme-white h-100" data-options='{"items":1,"autoplay":true,"loop":true,"autoplayHoverPause":true,"animateOut":"fadeOut","nav":true}' data-zanim-lg='{"animation":"zoom-out","delay":0}' data-zanim-trigger="scroll">
+				                <div class="min-vh-lg-100 py-9">
+				                  <div class="bg-holder" style="border-radius:10px;background-image:url(/assets/img/detail/headers/header-3.jpg);"></div>
+				                  <!--/.bg-holder-->
+				                </div>
+				                <div class="min-vh-lg-100 py-9">
+				                  <div class="bg-holder" style="border-radius:10px;background-image:url(/assets/img/detail/headers/header-2.jpg);"></div>
+				                  <!--/.bg-holder-->
+				                </div>
+				                <div class="min-vh-lg-100 py-9">
+				                  <div class="bg-holder" style="border-radius:10px;background-image:url(/assets/img/detail/headers/header-12.jpg);"></div>
+				                  <!--/.bg-holder-->
+				                </div>
+			                </div>
+	           				<table id="20ftMasterList" style="margin-top:20px;">
 		             			<th class="br_l"></th>
 					            <th>내부<span>(m)</span></th>
 					            <th>외부<span>(m)</span></th>
@@ -698,8 +711,22 @@
          				<!-- product_size -->
          				<div class="product_size product_info_item product_info_item_mobile">
        					<h3>저온창고 사이즈</h3>
-       					<p><img src="/assets/img/calc/size_img.png"></p>
-       						<table id="20ftMasterList_M">
+       					<!-- <p><img src="/assets/img/calc/size_img.png"></p> -->
+       					<div class="owl-carousel owl-theme owl-dots-inner owl-theme-white h-100" data-options='{"items":1,"autoplay":true,"loop":true,"autoplayHoverPause":true,"animateOut":"fadeOut","nav":true}' data-zanim-lg='{"animation":"zoom-out","delay":0}' data-zanim-trigger="scroll">
+				                <div class="min-vh-lg-100 py-9">
+				                  <div class="bg-holder" style="border-radius:10px;background-image:url(/assets/img/detail/headers/header-3.jpg);"></div>
+				                  <!--/.bg-holder-->
+				                </div>
+				                <div class="min-vh-lg-100 py-9">
+				                  <div class="bg-holder" style="border-radius:10px;background-image:url(/assets/img/detail/headers/header-2.jpg);"></div>
+				                  <!--/.bg-holder-->
+				                </div>
+				                <div class="min-vh-lg-100 py-9">
+				                  <div class="bg-holder" style="border-radius:10px;background-image:url(/assets/img/detail/headers/header-12.jpg);"></div>
+				                  <!--/.bg-holder-->
+				                </div>
+			                </div>
+       						<table id="20ftMasterList_M" style="margin-top:20px;">
 		       					<th class="br_l"></th>
 					            <th>내부<span>(m)</span></th>
 					            <th>외부<span>(m)</span></th>
@@ -728,15 +755,15 @@
          				<div class="cont_box tab_common_cont">
               					<h3>정보입력</h3>
               					<div class="item">
-                					<input type="text" id="wid" name="wid" placeholder="가로" onchange="inputValueWidChange();" required>
+                					<input type="text" id="wid" name="wid" placeholder="가로(mm)" onchange="inputValueWidChange();" required>
               						<div class="error-msg1" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
               					</div>
               					<div class="item">
-                					<input type="text" id="vert" name="vert" placeholder="세로" onchange="inputValueVertChange();" required>
+                					<input type="text" id="vert" name="vert" placeholder="세로(mm)" onchange="inputValueVertChange();" required>
                 					<div class="error-msg2" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
               					</div>
               					<div class="item">
-                					<input type="text" id="heg" name="heg" placeholder="높이" onchange="inputValueHegChange();" required>
+                					<input type="text" id="heg" name="heg" placeholder="높이(mm)" onchange="inputValueHegChange();" required>
                 					<div class="error-msg3" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
               					</div>
               					<div class="item">

@@ -30,6 +30,14 @@ public class CalcController {
 	}
 	
 	@SuppressWarnings("null")
+	@RequestMapping("/calcProc")
+	public String calcProc(HttpServletRequest request, Model model) throws Exception {
+		String widProc = request.getParameter("widProc");
+		model.addAttribute("widProc",widProc);
+		return "calcProc";
+	}
+	
+	@SuppressWarnings("null")
 	@RequestMapping("/calc")
 	public String calc(HttpServletRequest request, Model model) throws Exception {
 		CalcInputEntity cmd = new CalcInputEntity();
