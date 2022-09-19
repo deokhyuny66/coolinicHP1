@@ -67,7 +67,6 @@
 	}
     </style>
     <script>
-    
     	function submitCheck() {
     		var count = $('#store > option:selected').val();
 			var temperture = $('#temperture > option:selected').val();
@@ -84,7 +83,6 @@
 			}
 
 			if(temperture==0){
-				alert("b");
 				$("#temperture").focus();
 				return false;
 			}
@@ -159,12 +157,10 @@
       		  document.querySelector('.item .alert-msg');
       		birthErrorMsgElSize.innerText = "가로 x 세로 x 도어 두께 (도어 타입)";	
     	}
-    	
-    	
     </script>
     
   	</head>
-<body onload="onload()">
+<body>
     <main>
       
 	  
@@ -2764,14 +2760,7 @@
     </main>
 
 	<script>
-	$('#loading').hide();
-	  /* $(document).ready(function() { 
-	    
-	    $('#btnloading #btnSave').click(function(){
-			$('#loading').show();
-			return true;
-        });
-   });  */
+		$('#loading').hide();
 	</script>
 	<script src="/assets/js/detail/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.js"></script>

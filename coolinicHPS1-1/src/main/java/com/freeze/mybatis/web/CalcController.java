@@ -32,8 +32,70 @@ public class CalcController {
 	@SuppressWarnings("null")
 	@RequestMapping("/calcProc")
 	public String calcProc(HttpServletRequest request, Model model) throws Exception {
+		//사용자 입력 정보
+		String nameNM = request.getParameter("nameNM");
+		String companyNM = request.getParameter("companyNM");
+		String cellphone = request.getParameter("cellphone");
+		String hopeDate = request.getParameter("hopeDate");
+		String address = request.getParameter("address");
+		String reqContact = request.getParameter("reqContact");
+		String agree_all = request.getParameter("agree_all");
+		String agree_o = request.getParameter("agree_o");
+		String agree_p = request.getParameter("agree_p");
+		
+		//정보 선택
 		String widProc = request.getParameter("widProc");
+		String vertProc = request.getParameter("vertProc");
+		String hegProc = request.getParameter("hegProc");
+		String storeProc = request.getParameter("storeProc");
+		String temper_typeProc = request.getParameter("temper_typeProc");
+		String mtypeProc = request.getParameter("mtypeProc");
+		String msizeProc = request.getParameter("msizeProc");
+		String purcheseProc = request.getParameter("purcheseProc");
+		
+		//결과 내용(위내용 포함)
+		String floor_areaProc = request.getParameter("floor_areaProc");
+		String total_areaProc = request.getParameter("total_areaProc");
+		String pylsProc = request.getParameter("pylsProc");
+		
+		//결과 금액
+		String panel_priceProc = request.getParameter("panel_priceProc");
+		String door_priceProc = request.getParameter("door_priceProc");
+		String base_priceProc = request.getParameter("base_priceProc");
+		String sub_priceProc = request.getParameter("sub_priceProc");
+		String total_priceProc = request.getParameter("total_priceProc");
+
+		
+		//사용자 입력 정보
+		model.addAttribute("nameNM",nameNM);
+		model.addAttribute("companyNM",companyNM);
+		model.addAttribute("cellphone",cellphone);
+		model.addAttribute("hopeDate",hopeDate);
+		model.addAttribute("address",address);
+		model.addAttribute("reqContact",reqContact);
+		model.addAttribute("agree_all",agree_all);
+		model.addAttribute("agree_o",agree_o);
+		model.addAttribute("agree_p",agree_p);
+		
 		model.addAttribute("widProc",widProc);
+		model.addAttribute("vertProc",vertProc);
+		model.addAttribute("hegProc",hegProc);
+		model.addAttribute("storeProc",storeProc);
+		model.addAttribute("temper_typeProc",temper_typeProc);
+		model.addAttribute("mtypeProc",mtypeProc);
+		model.addAttribute("msizeProc",msizeProc);
+		model.addAttribute("purcheseProc",purcheseProc);
+		
+		model.addAttribute("floor_areaProc",floor_areaProc);
+		model.addAttribute("total_areaProc",total_areaProc);
+		model.addAttribute("pylsProc",pylsProc);
+		
+		model.addAttribute("panel_priceProc",panel_priceProc);
+		model.addAttribute("door_priceProc",door_priceProc);
+		model.addAttribute("base_priceProc",base_priceProc);
+		model.addAttribute("sub_priceProc",sub_priceProc);
+		model.addAttribute("total_priceProc",total_priceProc);
+		
 		return "calcProc";
 	}
 	

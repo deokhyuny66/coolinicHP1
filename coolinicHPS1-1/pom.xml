@@ -65,6 +65,26 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		
+<dependency>
+    <groupId>javax.activation</groupId>
+    <artifactId>activation</artifactId>
+    <version>1.1.1</version>
+</dependency>
+		
+<!-- https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
+<dependency>
+    <groupId>com.sun.mail</groupId>
+    <artifactId>javax.mail</artifactId>
+    <version>1.5.5</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+<dependency>
+    <groupId>javax.mail</groupId>
+    <artifactId>javax.mail-api</artifactId>
+    <version>1.5.5</version>
+</dependency>
 
 <dependency>
     <groupId>org.jsoup</groupId>

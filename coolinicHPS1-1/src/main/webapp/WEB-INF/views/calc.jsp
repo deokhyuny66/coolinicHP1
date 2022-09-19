@@ -1,34 +1,59 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@page import="java.lang.reflect.Array"%>
 <%@ page import="java.util.*"%>
 <%@ page import="com.freeze.mybatis.vo.CalcInputEntity"%>
 <%@ page import="com.freeze.mybatis.vo.CalcSettingEntity"%>
 <%@ page import="com.freeze.mybatis.services.CalcService" %>
 <%@ page import="com.freeze.mybatis.dao.CalcDAO" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> <!-- JSTL POM Ãß°¡ ¹× ÇØ´ç ¶óÀÎ Ãß°¡ -->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> <!-- JSTL POM ì¶”ê°€ ë° í•´ë‹¹ ë¼ì¸ ì¶”ê°€ -->
 <%
 	request.setCharacterEncoding("utf-8");
 %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
  <link href="/assets/css/main/slides.css" rel="stylesheet" type="text/css">
  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
  <link href="/assets/css/theme.css" rel="stylesheet">
  <link href="/assets/lib/prismjs/prism.css" rel="stylesheet">
  <link href="/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
- <link href="/assets/css/detaissl/jquery.fancybox.min.css" rel="stylesheet">
  <link href="/assets/css/detail/comm_detail.css" rel="stylesheet">
  <link href="/assets/css/calc/commons.css" rel="stylesheet" type="text/css">
  <link href="/assets/css/calc/est.css" rel="stylesheet" type="text/css">
  <link href="/assets/css/calc/comm_calc.css" rel="stylesheet" type="text/css">
  <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+#loadings {
+  	width: 80%;
+  	height: 100%;
+  	top: 0;
+  	left: 0;
+  	position: fixed;
+  	display: block;
+  	opacity: 0.6;
+  	background: #000;
+  	z-index: 99;
+  	text-align: center;
+}
+#loadings > img {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	z-index: 100;
+}
+#loadings > p {
+   	position: absolute;
+   	top: 57%;
+   	left: 43%;
+   	z-index: 101;
+   	font-color: #fff;
+}
+
 table {
 	width: 100%;
 	border: 1px solid #ccc;
@@ -170,21 +195,21 @@ footer #btnSave2 {
 }
 
 
-/* ÀÓÀÇÀÇ ¿µ¿ª »ý¼º */
+/* ìž„ì˜ì˜ ì˜ì—­ ìƒì„± */
 .scrollBar { 
   height: 200px;
   overflow-y: scroll;
 }
 
-/* ¾Æ·¡ÀÇ ¸ðµç ÄÚµå´Â ¿µ¿ª::ÄÚµå·Î »ç¿ë */
+/* ì•„ëž˜ì˜ ëª¨ë“  ì½”ë“œëŠ” ì˜ì—­::ì½”ë“œë¡œ ì‚¬ìš© */
 
 .scrollBar::-webkit-scrollbar {
-    width: 10px;  /* ½ºÅ©·Ñ¹ÙÀÇ ³Êºñ */
+    width: 10px;  /* ìŠ¤í¬ë¡¤ë°”ì˜ ë„ˆë¹„ */
 }
 
 .scrollBar::-webkit-scrollbar-thumb {
-    height: 30%; /* ½ºÅ©·Ñ¹ÙÀÇ ±æÀÌ */
-    background: #aaa; /* ½ºÅ©·Ñ¹ÙÀÇ »ö»ó */
+    height: 30%; /* ìŠ¤í¬ë¡¤ë°”ì˜ ê¸¸ì´ */
+    background: #aaa; /* ìŠ¤í¬ë¡¤ë°”ì˜ ìƒ‰ìƒ */
     
     border-radius: 10px;
 }
@@ -201,8 +226,14 @@ textarea {
 }
 
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
+	  <div id="loadings" style="margin-left: 0px;">
+  		<img src="/assets/img/lodding.gif">
+  		<p style="color:#fff;">ì „ì†¡ ì¤‘ ìž…ë‹ˆë‹¤. ìž ì‹œ ê¸°ë‹¤ë ¤ì£¼ì„¸ìš”.</p>
+	  </div>
+	  
 	<div class="page position-absolute t-0 w-100" id="service">
         <div class="row no-gutters minh-100vh">
           <div class="col-lg-9 order-1 order-lg-0 page-content pt-6 pt-lg-0">
@@ -212,10 +243,10 @@ textarea {
 	      <section>
 	      <div id="wrapsv">
 			<header id="headersv" class="row_flex">
-    			<h2>AI ÀÚµ¿°ßÀû °è»ê±â</h2>
+    			<h2>AI ìžë™ê²¬ì  ê³„ì‚°ê¸°</h2>
   			</header>
 		  	<section id="sectionsv">
-   			<form action="/calcProc" name="rentalReqForm" id="rentalReqForm" method="post">
+   			<form action="/calcProc" name="rentalReqForm" id="rentalReqForm" method="post" onsubmit="return submitCheck();">
    			<input type="hidden" name="widProc" id="widProc" value="${wid}">
    			<input type="hidden" name="vertProc" id="vertProc" value="${vert}">
    			<input type="hidden" name="hegProc" id="hegProc" value="${heg}">
@@ -252,183 +283,183 @@ textarea {
      			<div class="row_flex">
        				<div class="addition" style="width:100%;">
          				<div class="product_size product_info_item">
-	      					<h3>°ßÀû¼­ ³»¿ë</h3>
+	      					<h3>ê²¬ì ì„œ ë‚´ìš©</h3>
 	           				<table id="20ftMasterList">
-		             			<th class="br_l">Ç×¸ñ</th>
-					            <th colspan="3">¼¼ºÎ³»¿ª</th>
+		             			<th class="br_l">í•­ëª©</th>
+					            <th colspan="3">ì„¸ë¶€ë‚´ì—­</th>
 		             			<tr>
-					               	<td>¹Ù´Ú¸éÀû</td>
+					               	<td>ë°”ë‹¥ë©´ì </td>
 					               	<td colspan="3">${floor_area}</td>
 					            </tr>
 					            <tr>
-					            	<td>ÀüÃ¼¸éÀû</td>
+					            	<td>ì „ì²´ë©´ì </td>
 					            	<td colspan="3">${total_area}</td>
 					            </tr>
 					            <tr>
-					                <td>Æò¼öÈ¯»ê</td>
-					                <td colspan="3">${pyls}Æò</td>
+					                <td>í‰ìˆ˜í™˜ì‚°</td>
+					                <td colspan="3">${pyls}í‰</td>
 					            </tr>
 					            <tr>
-					                <td>¿ëµµ</td>
+					                <td>ìš©ë„</td>
 					                <td colspan="3">${store}</td>
 					            </tr>
 					            <tr>
-					                <td>ÃâÀÔ±¸</td>
+					                <td>ì¶œìž…êµ¬</td>
 					                <td colspan="3">${mtype}</td>
 					            </tr>
 					            <tr>
-					                <td>ÃâÀÔ±¸»çÀÌÁî</td>
+					                <td>ì¶œìž…êµ¬ì‚¬ì´ì¦ˆ</td>
 					                <td colspan="3">${msize}</td>
 					            </tr>
 					            <tr>
-					                <td>±¸¸ÅÇüÅÂ</td>
+					                <td>êµ¬ë§¤í˜•íƒœ</td>
 					                <td colspan="3">${purchese}</td>
 					            </tr>
 					            <tr class="blur">
 					                <td>CDU</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
 					                <td>COOLER</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>ÄÜÆ®·Ñ</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì½˜íŠ¸ë¡¤</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>ÆØÃ¢¹ëºê</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>íŒ½ì°½ë°¸ë¸Œ</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>ÀüÀÚ¹ëºê</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì „ìžë°¸ë¸Œ</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>°í¾Ð¹è°ü</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ê³ ì••ë°°ê´€</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>Àú¾Ð¹è°ü</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì €ì••ë°°ê´€</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>°í¾Ð º¸¿ÂÀç</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ê³ ì•• ë³´ì˜¨ìž¬</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>Àú¾Ð º¸¿ÂÀç</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì €ì•• ë³´ì˜¨ìž¬</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>Àü¿ø¼±</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì „ì›ì„ </td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>Á¶ÀÛ º¸Á¶¼± 1</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì¡°ìž‘ ë³´ì¡°ì„  1</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>Á¶ÀÛ º¸Á¶¼± 2</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì¡°ìž‘ ë³´ì¡°ì„  2</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>Á¶ÀÛ º¸Á¶¼± 3</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì¡°ìž‘ ë³´ì¡°ì„  3</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>¿£Áö´Ï¾î ¼ö</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì—”ì§€ë‹ˆì–´ ìˆ˜</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>°ø»ç±â°£</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ê³µì‚¬ê¸°ê°„</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 	           				</table>
          				</div>
          				<div class="product_size product_info_item">
-	      					<h3>°ßÀû¼­ ±Ý¾×</h3>
+	      					<h3>ê²¬ì ì„œ ê¸ˆì•¡</h3>
 	           				<table id="20ftMasterList">
-		             			<th class="br_l">Ç×¸ñ</th>
-		             			<th colspan="3">°ßÀû±Ý¾×<span>(´ÜÀ§:¿ø)</span></th>
+		             			<th class="br_l">í•­ëª©</th>
+		             			<th colspan="3">ê²¬ì ê¸ˆì•¡<span>(ë‹¨ìœ„:ì›)</span></th>
 		             			<tr>
-					               	<td>¿ì·¹Åº ÆÇ³Ú</td>
+					               	<td>ìš°ë ˆíƒ„ íŒë„¬</td>
 					               	<td colspan="3">${panel_price}</td>
 					            </tr>
 					            <tr>
-					            	<td>µµ¾î</td>
+					            	<td>ë„ì–´</td>
 					            	<td colspan="3">${door_price}</td>
 					            </tr>
 					            <tr>
-					                <td>º£ÀÌ½º</td>
+					                <td>ë² ì´ìŠ¤</td>
 					                <td colspan="3">${base_price}</td>
 					            </tr>
 					            <tr>
-					                <td>ºÎÀÚÀç</td>
+					                <td>ë¶€ìžìž¬</td>
 					                <td colspan="3">${sub_price}</td>
 					            </tr>
 					            <tr class="blur">
 					                <td>CDU</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
 					                <td>COOLER</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>ÄÜÆ®·Ñ</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì½˜íŠ¸ë¡¤</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>ÆØÃ¢¹ëºê</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>íŒ½ì°½ë°¸ë¸Œ</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>ÀüÀÚ¹ëºê</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì „ìžë°¸ë¸Œ</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>°í¾Ð¹è°ü</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ê³ ì••ë°°ê´€</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>Àú¾Ð¹è°ü</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì €ì••ë°°ê´€</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>°í¾Ð º¸¿ÂÀç</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ê³ ì•• ë³´ì˜¨ìž¬</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>Àú¾Ð º¸¿ÂÀç</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì €ì•• ë³´ì˜¨ìž¬</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>Àü¿ø¼±</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì „ì›ì„ </td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>Á¶ÀÛ º¸Á¶¼± 1</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì¡°ìž‘ ë³´ì¡°ì„  1</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>Á¶ÀÛ º¸Á¶¼± 2</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì¡°ìž‘ ë³´ì¡°ì„  2</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>Á¶ÀÛ º¸Á¶¼± 3</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì¡°ìž‘ ë³´ì¡°ì„  3</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>¿£Áö´Ï¾î ¼ö</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ì—”ì§€ë‹ˆì–´ ìˆ˜</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr class="blur">
-					                <td>°ø»ç±â°£</td>
-					                <td colspan="3">»ó¼¼ °ßÀû¼­ ¿äÃ»½Ã Ç¥±â</td>
+					                <td>ê³µì‚¬ê¸°ê°„</td>
+					                <td colspan="3">ìƒì„¸ ê²¬ì ì„œ ìš”ì²­ì‹œ í‘œê¸°</td>
 					            </tr>
 					            <tr>
-					                <th>ÃÑ ±Ý¾×</th>
+					                <th>ì´ ê¸ˆì•¡</th>
 					                <th colspan="3">${total_price}</th>
 					            </tr>
 	           				</table>
@@ -440,7 +471,7 @@ textarea {
    		  <!-- container_content end -->
     		 
     		 
-    		 <!-- ¸ð´Þ -->
+    		 <!-- ëª¨ë‹¬ -->
     		 <div class="modal-wrapper">
 			  <div class="modal scrollBar">
 			    <div class="head">
@@ -450,54 +481,54 @@ textarea {
 			    </div>
 			    <div class="contentX">
 			    	<div class="cont_box tab_common_cont">
-			    		<label for="nameNM"><h3>°í°´¸í</h3></label>
+			    		<label for="nameNM"><h3>ê³ ê°ëª…</h3></label>
 	   					<div class="item">
-	     					<input type="text" id="nameNM" name="nameNM" placeholder="°í°´¸í" onchange="inputValueWidChange();" required>
+	     					<input type="text" id="nameNM" name="nameNM" placeholder="ê³ ê°ëª…" onchange="inputValueWidChange();" required>
 	   						<div class="error-msg1" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
 	   					</div>
-   						<label for="companyNM"><h3>±â¾÷¸í</h3></label>
+   						<label for="companyNM"><h3>ê¸°ì—…ëª…</h3></label>
 	   					<div class="item">
-	     					<input type="text" id="companyNM" name="companyNM" placeholder="±â¾÷¸í" onchange="inputValueVertChange();" required>
+	     					<input type="text" id="companyNM" name="companyNM" placeholder="ê¸°ì—…ëª…" onchange="inputValueVertChange();" required>
 	     					<div class="error-msg2" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
 	   					</div>
-	   					<label for="cellphone"><h3>¿¬¶ôÃ³</h3></label>
+	   					<label for="cellphone"><h3>ì—°ë½ì²˜</h3></label>
 	   					<div class="item">
-	     					<input type="text" id="cellphone" name="cellphone" placeholder="¿¬¶ôÃ³" onchange="inputValueHegChange();" required>
+	     					<input type="text" id="cellphone" name="cellphone" placeholder="ì—°ë½ì²˜" onchange="inputValueHegChange();" required>
 	     					<div class="error-msg3" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
 	   					</div>
-	   					<label for="hopeDate"><h3>¼³Ä¡Èñ¸Á³¯Â¥</h3></label>
+	   					<label for="hopeDate"><h3>ì„¤ì¹˜í¬ë§ë‚ ì§œ</h3></label>
 	   					<div class="item">
-	     					<input type="text" id="hopeDate" name="hopeDate" placeholder="¼³Ä¡¸¦ Èñ¸ÁÇÏ½Ã´Â ³¯Â¥¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä" onchange="inputValueHegChange();" required>
+	     					<input type="text" id="hopeDate" name="hopeDate" placeholder="ì„¤ì¹˜ë¥¼ í¬ë§í•˜ì‹œëŠ” ë‚ ì§œë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”" onchange="inputValueHegChange();" required>
 	     					<div class="error-msg3" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
 	   					</div>
-	   					<label for="address"><h3>¼³Ä¡ÁÖ¼Ò</h3></label>
+	   					<label for="address"><h3>ì„¤ì¹˜ì£¼ì†Œ</h3></label>
 	   					<div class="item">
-	     					<input type="text" id=""address"" name=""address"" placeholder="¼³Ä¡ÁÖ¼Ò" onchange="inputValueHegChange();" required>
+	     					<input type="text" id="address" name="address" placeholder="ì„¤ì¹˜ì£¼ì†Œ" onchange="inputValueHegChange();" required>
 	     					<div class="error-msg3" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
 	   					</div>
-	   					<label for="reqContact"><h3>¿äÃ»/¹®ÀÇ»çÇ×</h3></label>
+	   					<label for="reqContact"><h3>ìš”ì²­/ë¬¸ì˜ì‚¬í•­</h3></label>
 	   					<div class="item">
 	     					<textarea id="reqContact" class="scrollBar" name="reqContact" rows="5" cols="33"></textarea>
 	     					<div class="error-msg3" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
 	   					</div>
 	   					<label for="agree_all">
 						  <input type="checkbox" name="agree_all" id="agree_all">
-						  <span>ÀüÃ¼µ¿ÀÇ</span>
+						  <span>ì „ì²´ë™ì˜</span>
 						</label>
 						<br/>
 						<label for="agree">
-						  <input type="checkbox" name="agree" value="1">
-						  <span>ÀÌ¿ë¾à°ü µ¿ÀÇ ÀüÃ¼º¸±â<strong>(ÇÊ¼ö)</strong></span>
+						  <input type="checkbox" name="agree_o" id="agree_o" value="1" required>
+						  <span>ì´ìš©ì•½ê´€ ë™ì˜ ì „ì²´ë³´ê¸°<strong>(í•„ìˆ˜)</strong></span>
 						</label>
 						<br/>
 						<label for="agree">
-						  <input type="checkbox" name="agree" value="2">
-						  <span>°³ÀÎÁ¤º¸ Ãë±Þ¹æÄ§ µ¿ÀÇ ÀüÃ¼º¸±â<strong>(ÇÊ¼ö)</strong></span>
+						  <input type="checkbox" name="agree_p" id="agree_p" value="2" required>
+						  <span>ê°œì¸ì •ë³´ ì·¨ê¸‰ë°©ì¹¨ ë™ì˜ ì „ì²´ë³´ê¸°<strong>(í•„ìˆ˜)</strong></span>
 						</label>
    					</div>
    					<div class="calculator_cont row_flex">
            				<div class="calculator_cont02 row_flex page-wrapper" style="justify-content: center">
-             				<input type="submit" id="btnSave1" value="°ßÀû¼­ ¹Þ¾Æ º¼°Ô¿ä" style="background: #2251A1;color:#fff;">
+             				<input type="submit" id="btnSave3" value="ìƒì„¸ ê²¬ì ì„œ ë°›ì„ê²Œìš”" style="background: #2251A1;color:#fff;">
            				</div>
            			</div>   			
 			    </div>
@@ -513,15 +544,15 @@ textarea {
               			      
               				<!--calculator_cont01-->
               				<div class="calculator_cont02 row_flex page-wrapper" style="justify-content: center">
-                				<input type="submit" id="btnSave1" value="´Ù½Ã Á¶È¸" style="width:40%;margin-right: 10px;" onClick="location.href='http://localhost:8080/#service'">
-                				<input type="button" id="btnSave2" class="trigger" value="»ó¼¼ °ßÀû¼­ ¿äÃ»" style="width:40%;">
+                				<input type="submit" id="btnSave1" value="ë‹¤ì‹œ ì¡°íšŒ" style="width:40%;margin-right: 10px;" onClick="location.href='http://localhost:8080/#service'">
+                				<input type="button" id="btnSave2" class="trigger" value="ìƒì„¸ ê²¬ì ì„œ ìš”ì²­" style="width:40%;">
               				</div>
               				<!--calculator_cont02-->
             			</div>
             			<!--calculator_cont end-->
     
             			<div class="notice" style="text-align: center;">
-              				<p>´ÙÀ½ ±Ý¾×Àº ºÎ°¡¼¼¸¦ Æ÷ÇÔÇÑ ±Ý¾×ÀÌ¸ç, ¼³Ä¡ÇöÀå È¯°æ¿¡ µû¶ó Ãß°¡ ºñ¿ë(Å©·¹ÀÎ, Áö°ÔÂ÷ µî)ÀÌ ¹ß»ýÇÒ ¼ö ÀÖ½À´Ï´Ù.</p>
+              				<p>ë‹¤ìŒ ê¸ˆì•¡ì€ ë¶€ê°€ì„¸ë¥¼ í¬í•¨í•œ ê¸ˆì•¡ì´ë©°, ì„¤ì¹˜í˜„ìž¥ í™˜ê²½ì— ë”°ë¼ ì¶”ê°€ ë¹„ìš©(í¬ë ˆì¸, ì§€ê²Œì°¨ ë“±)ì´ ë°œìƒí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</p>
             			</div>
             			<!--notice-->
           			</div>
@@ -551,14 +582,41 @@ textarea {
               </div>
               <!--/.bg-holder-->
 
-              <h1 class="page-title">AI ÀÚµ¿°ßÀû</h1>
+              <h1 class="page-title">AI ìžë™ê²¬ì </h1>
             </div>
           </div>
         </div>
       </div>
       
 	<script>
-	// µ¿ÀÇ ¸ðµÎ¼±ÅÃ / ÇØÁ¦
+	var obj = document.getElementById("loadings");
+	obj.style.display = "none";
+	
+	function submitCheck() {
+		var agree_all = $('#agree_all').val();
+		var agree_o = $('#agree_o').val();
+		var agree_p = $('#agree_p').val();
+		
+		if(agree_all != 'on'){
+			$("#agree_all").focus();
+			return false;
+		}
+		
+		if(agree_o != '1'){
+			$("#agree_o").focus();
+			return false;
+		}
+		if(agree_p != '2'){
+			$("#agree_p").focus();
+			return false;
+		}else{
+			$('#loadings').show();
+		}
+		
+	Â    return true;
+	}
+	
+	// ë™ì˜ ëª¨ë‘ì„ íƒ / í•´ì œ
 	const agreeChkAll = document.querySelector('input[name=agree_all]');
 	    agreeChkAll.addEventListener('change', (e) => {
 			let agreeChk = document.querySelectorAll('input[name=agree]');
@@ -567,15 +625,14 @@ textarea {
 			}
 	});
 	    
-	 /* Toggle Ãß°¡ */
+	 /* Toggle ì¶”ê°€ */
 	  $('footer #btnSave2').on('click', function() {
 		  if($('#rentalReqForm .modal-wrapper').hasClass("close")) {
 			  $('#rentalReqForm .modal-wrapper').addClass("open").removeClass("close");
 		  }else{
-			  $('#rentalReqForm .modal-wrapper').toggleClass('open');	
+			  $('#rentalReqForm .modal-wrapper').toggleClass('open');
 		  }
 	  });
-	 
 	  $('#rentalReqForm .btn-closeX').on('click',function(){
 		  if($('#rentalReqForm .modal-wrapper').hasClass("open")) {
 			  $('#rentalReqForm .modal-wrapper').addClass("close").removeClass("open");
@@ -584,5 +641,6 @@ textarea {
 		  }
 	  });
 	</script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </body>
 </html>
