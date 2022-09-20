@@ -160,7 +160,7 @@
     </script>
     
   	</head>
-<body>
+<body onload="onload()">
     <main>
       
 	  
@@ -185,7 +185,7 @@
        
  
               <div class="col-10 col-sm-8 col-md-9 z-index-1">
-                <h1 class="text-white fs-2 fs-sm-4 fs-xl-5 display-4" style="font-family: 'OTWelcomeBA';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');sfont-weight: 700; font-style: normal;line-height: 1.2;">저온 설비가 필요할 땐<br/>AI 자동 견적.</h1>
+                <h1 class="text-white fs-2 fs-sm-4 fs-xl-5 display-4" style="font-family: 'OTWelcomeBA';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');sfont-weight: 700; font-style: normal;line-height: 1.2;"><!-- 저온 설비가 필요할 땐<br/>AI 자동 견적. --></h1>
                 <h5 class="fs-0 fs-sm-1 mt-3 mt-md-5 text-white"></h5>
               </div>
             </div>
@@ -197,37 +197,37 @@
                 </div><!-- 회사소개 -->
                 <!--/.bg-holder-->
               </div>
-              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="service">
+              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="ai">
                 <div class="bg-holder" id="bg-holder-ai">	
                 </div><!-- AI 자동견적 -->
                 <!--/.bg-holder-->
               </div>
-              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="portfolio">
+              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="warranty">
                 <div class="bg-holder" id="bg-holder-3years">
                 </div><!-- 3년의 워런티 -->
                 <!--/.bg-holder-->
               </div>
-              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="gallery">
+              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="as">
                 <div class="bg-holder" id="bg-holder-as">
                 </div><!-- A/S요청 -->
                 <!--/.bg-holder-->
               </div>
-              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="docs">
+              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="goldenTimeAS">
                 <div class="bg-holder" id="bg-holder-contact"">
                 </div><!-- 문의하기 -->
                 <!--/.bg-holder-->
               </div>
-              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="faq">
+              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="traceabilityRMS">
                 <div class="bg-holder" id="bg-holder-rms">
                 </div><!-- RMS 이력추적 -->
                 <!--/.bg-holder-->
               </div>
-              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="contact">
+              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="smartADS">
                 <div class="bg-holder" id="bg-holder-ads">
                 </div><!-- ADS  -->
                 <!--/.bg-holder-->
               </div>
-              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="starter">
+              <div class="col-6 col-sm-3 minh-25vh h-lg-50vh sidebar-item-wrapper py-5" data-content="integSolution">
                 <div class="bg-holder" id="bg-holder-integration">
                 </div><!-- 통합관리솔루션 -->
                 <!--/.bg-holder-->
@@ -637,7 +637,7 @@
       
       
       <!-- AI 자동견적 -->
-      <div class="page position-absolute t-0 w-100" id="service">
+      <div class="page position-absolute t-0 w-100" id="ai">
         <div class="row no-gutters minh-100vh">
           <div class="col-lg-9 order-1 order-lg-0 page-content pt-6 pt-lg-0">
 
@@ -650,7 +650,7 @@
   			</header>
 			
 		  	<section id="sectionsv">
-   			<form action="/calc" name="rentalForm" id="rentalForm" method="post" onsubmit="return submitCheck();">
+   			<form action="/ai-calc" name="rentalForm" id="rentalForm" method="post" onsubmit="return submitCheck();">
    			
    			<!-- container_content -->
    			<div class="container_content">
@@ -659,7 +659,7 @@
        				<div class="product_info">
          				<!-- product_size -->
 	         				<div class="product_size product_info_item">
-	      					<h3>저온창고 사이즈</h3>
+	      					<!-- <h3>저온창고 정보</h3> -->
 	      					<!-- <video src="/assets/video/coolinic.mp4" class="videoMp4-calc" style="border-radius: 10px;" autoplay muted loop controls></video> -->
 	      					<div class="owl-carousel owl-theme owl-dots-inner owl-theme-white h-100" data-options='{"items":1,"autoplay":true,"loop":true,"autoplayHoverPause":true,"animateOut":"fadeOut","nav":true}' data-zanim-lg='{"animation":"zoom-out","delay":0}' data-zanim-trigger="scroll">
 				                <div class="min-vh-lg-100 py-9">
@@ -675,7 +675,7 @@
 				                  <!--/.bg-holder-->
 				                </div>
 			                </div>
-	           				<table id="20ftMasterList" style="margin-top:20px;">
+	           				<!-- <table id="20ftMasterList" style="margin-top:20px;">
 		             			<th class="br_l"></th>
 					            <th>내부<span>(m)</span></th>
 					            <th>외부<span>(m)</span></th>
@@ -698,7 +698,7 @@
 					                <td>2.6</td>
 					                <td>2.6</td>
 					            </tr>
-	           				</table>
+	           				</table> -->
          				</div>
          				
        				</div>
@@ -706,7 +706,7 @@
        				<div class="addition">
          				<!-- product_size -->
          				<div class="product_size product_info_item product_info_item_mobile">
-       					<h3>저온창고 사이즈</h3>
+       					<!-- <h3>저온창고 정보</h3> -->
        					<!-- <p><img src="/assets/img/calc/size_img.png"></p> -->
        					<div class="owl-carousel owl-theme owl-dots-inner owl-theme-white h-100" data-options='{"items":1,"autoplay":true,"loop":true,"autoplayHoverPause":true,"animateOut":"fadeOut","nav":true}' data-zanim-lg='{"animation":"zoom-out","delay":0}' data-zanim-trigger="scroll">
 				                <div class="min-vh-lg-100 py-9">
@@ -722,7 +722,7 @@
 				                  <!--/.bg-holder-->
 				                </div>
 			                </div>
-       						<table id="20ftMasterList_M" style="margin-top:20px;">
+       						<!-- <table id="20ftMasterList_M" style="margin-top:20px;">
 		       					<th class="br_l"></th>
 					            <th>내부<span>(m)</span></th>
 					            <th>외부<span>(m)</span></th>
@@ -745,11 +745,12 @@
 					                <td>2.6</td>
 					                <td>2.6</td>
 					            </tr>
-         					</table>
+         					</table> -->
          				</div>
 
          				<div class="cont_box tab_common_cont">
-              					<h3>정보입력</h3>
+              					<h3>저온창고의 정보를 입력해주세요.</h3>
+              					<h6 style="#777;padding-left: 10px;">저온창고의 정보 입력만으로 쉽게 자동 견적서를 확인하실 수 있습니다.</h6>
               					<div class="item">
                 					<input type="text" id="wid" name="wid" placeholder="가로(mm)" onchange="inputValueWidChange();" required>
               						<div class="error-msg1" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
@@ -797,12 +798,12 @@
 	              					<select id="msize" name="msize" required="required">
 								      <option value="0" selected disabled>출입구 사이즈</option>
 								      <option value="msize01">평수에 맞게 스탠다드 적용</option>
-								      <option value="msize02">900 x 2100 x 100 (오버랩)</option>
-								      <option value="msize03">1000 x 2100 x 100 (오버랩)</option>
-								      <option value="msize04">1200 x 2400 x 100 (슬라이드 / 편개)</option>
-								      <option value="msize05">1400 x 2600 x 100 (슬라이드 / 편개)</option>
-								      <option value="msize06">2400 x 2600 x 100 (슬라이드 / 양개)</option>
-								      <option value="msize07">2600 x 2800 x 100 (슬라이드 / 양개)</option>
+								      <option value="msize02">900 X 2100 X 100 (오버랩)</option>
+								      <option value="msize03">1000 X 2100 X 100 (오버랩)</option>
+								      <option value="msize04">1200 X 2400 X 100 (슬라이드 / 편개)</option>
+								      <option value="msize05">1400 X 2600 X 100 (슬라이드 / 편개)</option>
+								      <option value="msize06">2400 X 2600 X 100 (슬라이드 / 양개)</option>
+								      <option value="msize07">2600 X 2800 X 100 (슬라이드 / 양개)</option>
 								   </select>
 								   <div class="alert-msg" style="padding:5px 0 0 5px;font-size:12px;color:#999;background-color: #F4F7FF;"></div>
               					</div>
@@ -837,7 +838,7 @@
             			<!--calculator_cont end-->
     
             			<div class="notice">
-              				<p>다음 금액은 부가세를 포함한 금액이며, 설치현장 환경에 따라 추가 비용(크레인, 지게차 등)이 발생할 수 있습니다.</p>
+              				<p>기본 정보 입력만으로 스탠다드 견적 금액을 확인하실 수 있으며, 설치현장 환경에 따라 추가 비용이 발생할 수 있습니다.</p>
             			</div>
             			<!--notice-->
           			</div>
@@ -873,7 +874,7 @@
         </div>
       </div>
       
-      <div class="page position-absolute t-0 w-100" id="portfolio">
+      <div class="page position-absolute t-0 w-100" id="warranty">
         <div class="row no-gutters minh-100vh">
           <div class="col-lg-9 order-1 order-lg-0 page-content pt-6 pt-lg-0" style="padding-bottom:0;padding-top: 0 !important;">
 
@@ -1031,7 +1032,7 @@
       </div>
       
       <!-- A/S요청 -->
-      <div class="page position-absolute t-0 w-100" id="gallery">
+      <div class="page position-absolute t-0 w-100" id="as">
         <div class="row no-gutters minh-100vh">
           <div class="col-lg-9 order-1 order-lg-0 page-content pt-6 pt-lg-0">
 
@@ -1110,7 +1111,7 @@
 
 
             <footer class="page-footer">
-              <div class="bg-holder" style="background-image:url(/assets/img/sidebars/gallery.jpg);background-position: 0 8%; transform: scale(1.1);">
+              <div class="bg-holder"  style="background-image:url(/assets/img/sidebars/contact.jpg);background-position: 0 37%; transform: scale(1.1);">
               </div>
               <!--/.bg-holder-->
 
@@ -1142,7 +1143,7 @@
           </div>
         </div>
       </div>
-      <div class="page position-absolute t-0 w-100" id="faq">
+      <div class="page position-absolute t-0 w-100" id="traceabilityRMS">
         <div class="row no-gutters minh-100vh">
           <div class="col-lg-9 order-1 order-lg-0 page-content pt-6 pt-lg-0">
 
@@ -1541,7 +1542,7 @@
       </div>
       
       
-      <div class="page position-absolute t-0 w-100" id="contact">
+      <div class="page position-absolute t-0 w-100" id="smartADS">
         <div class="row no-gutters minh-100vh">
           <div class="col-lg-9 order-1 order-lg-0 page-content pt-6 pt-lg-0">
           
@@ -1951,7 +1952,7 @@
       
       
       
-      <div class="page position-absolute t-0 w-100" id="starter">
+      <div class="page position-absolute t-0 w-100" id="integSolution">
         <div class="row no-gutters minh-100vh">
           <div class="col-lg-9 order-1 order-lg-0 page-content pt-6 pt-lg-0">
 
@@ -2360,7 +2361,7 @@
       </div>
 
       <!-- Docs  -->    
-     <div class="page position-absolute t-0 w-100" id="docs">
+     <div class="page position-absolute t-0 w-100" id="goldenTimeAS">
         <div class="row no-gutters minh-100vh ">
           <div class="col-lg-9 order-1 order-lg-0 page-content pt-6 pt-lg-0">
 

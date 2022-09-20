@@ -30,7 +30,7 @@ public class CalcController {
 	}
 	
 	@SuppressWarnings("null")
-	@RequestMapping("/calcProc")
+	@RequestMapping("/ai-calcProc")
 	public String calcProc(HttpServletRequest request, Model model) throws Exception {
 		//사용자 입력 정보
 		String nameNM = request.getParameter("nameNM");
@@ -40,8 +40,6 @@ public class CalcController {
 		String address = request.getParameter("address");
 		String reqContact = request.getParameter("reqContact");
 		String agree_all = request.getParameter("agree_all");
-		String agree_o = request.getParameter("agree_o");
-		String agree_p = request.getParameter("agree_p");
 		
 		//정보 선택
 		String widProc = request.getParameter("widProc");
@@ -74,8 +72,6 @@ public class CalcController {
 		model.addAttribute("address",address);
 		model.addAttribute("reqContact",reqContact);
 		model.addAttribute("agree_all",agree_all);
-		model.addAttribute("agree_o",agree_o);
-		model.addAttribute("agree_p",agree_p);
 		
 		model.addAttribute("widProc",widProc);
 		model.addAttribute("vertProc",vertProc);
@@ -96,11 +92,11 @@ public class CalcController {
 		model.addAttribute("sub_priceProc",sub_priceProc);
 		model.addAttribute("total_priceProc",total_priceProc);
 		
-		return "calcProc";
+		return "ai-calcProc";
 	}
 	
 	@SuppressWarnings("null")
-	@RequestMapping("/calc")
+	@RequestMapping("/ai-calc")
 	public String calc(HttpServletRequest request, Model model) throws Exception {
 		CalcInputEntity cmd = new CalcInputEntity();
 		List<CalcPriceEntity> calcPriceEntity = service.getCalcPrice();
@@ -184,17 +180,17 @@ public class CalcController {
 		if(cmd.getMsizeVal().equals("msize01")){
 			cmd.setMsizeVal("평수에 맞게 스탠다드 적용");
 		}else if(cmd.getMsizeVal().equals("msize02")){
-			cmd.setMsizeVal("900 x 2100 x 100 (오버랩)");
+			cmd.setMsizeVal("900 X 2100 X 100 (오버랩)");
 		}else if(cmd.getMsizeVal().equals("msize03")){
-			cmd.setMsizeVal("1000 x 2100 x 100 (오버랩)");
+			cmd.setMsizeVal("1000 X 2100 X 100 (오버랩)");
 		}else if(cmd.getMsizeVal().equals("msize04")){
-			cmd.setMsizeVal("1200 x 2400 x 100 (슬라이드 / 편개)");
+			cmd.setMsizeVal("1200 X 2400 X 100 (슬라이드 / 편개)");
 		}else if(cmd.getMsizeVal().equals("msize05")){
-			cmd.setMsizeVal("1400 x 2600 x 100 (슬라이드 / 편개)");
+			cmd.setMsizeVal("1400 X 2600 X 100 (슬라이드 / 편개)");
 		}else if(cmd.getMsizeVal().equals("msize06")){
-			cmd.setMsizeVal("2400 x 2600 x 100 (슬라이드 / 양개)");
+			cmd.setMsizeVal("2400 X 2600 X 100 (슬라이드 / 양개)");
 		}else if(cmd.getMsizeVal().equals("msize07")){
-			cmd.setMsizeVal("2600 x 2800 x 100 (슬라이드 / 양개)");
+			cmd.setMsizeVal("2600 X 2800 X 100 (슬라이드 / 양개)");
 		}
 		
 		/* INPUT PURCHESE DATA */
@@ -268,6 +264,6 @@ public class CalcController {
 		model.addAttribute("msize", cmd.getMsizeVal());
 		model.addAttribute("purchese", cmd.getPurcheseVal());
 		
-		return "calc";
+		return "ai-calc";
 	}	
 }

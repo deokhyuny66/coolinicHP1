@@ -246,7 +246,7 @@ textarea {
     			<h2>AI 자동견적 계산기</h2>
   			</header>
 		  	<section id="sectionsv">
-   			<form action="/calcProc" name="rentalReqForm" id="rentalReqForm" method="post" onsubmit="return submitCheck();">
+   			<form action="/ai-calcProc" name="rentalReqForm" id="rentalReqForm" method="post" onsubmit="return submitCheck();">
    			<input type="hidden" name="widProc" id="widProc" value="${wid}">
    			<input type="hidden" name="vertProc" id="vertProc" value="${vert}">
    			<input type="hidden" name="hegProc" id="hegProc" value="${heg}">
@@ -315,65 +315,65 @@ textarea {
 					                <td>구매형태</td>
 					                <td colspan="3">${purchese}</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>CDU</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">35</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>COOLER</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">2HP</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>콘트롤</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">6HP</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>팽창밸브</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">200V</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>전자밸브</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">2.6V</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>고압배관</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">High</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>저압배관</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">Row</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>고압 보온재</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">Lagging High</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>저압 보온재</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">Lagging Row</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>전원선</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">220V</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>조작 보조선 1</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">2.14A</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>조작 보조선 2</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">5.4A</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>조작 보조선 3</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">9A</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>엔지니어 수</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">고급엔지니어 2명</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>공사기간</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">1일/3일 = 총4일</td>
 					            </tr>
 	           				</table>
          				</div>
@@ -398,71 +398,73 @@ textarea {
 					                <td>부자재</td>
 					                <td colspan="3">${sub_price}</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>CDU</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">535,000</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>COOLER</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">1,250,000</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>콘트롤</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">400,000</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>팽창밸브</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">50,000</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>전자밸브</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">50,000</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>고압배관</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">35,000</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>저압배관</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">15,000</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>고압 보온재</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">1M 25,000</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>저압 보온재</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">1M 15,000</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>전원선</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">1M 10,000</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>조작 보조선 1</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">5,090</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>조작 보조선 2</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">5,500</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>조작 보조선 3</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">6,250</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>엔지니어 수</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">총 4일/600,000</td>
 					            </tr>
-					            <tr class="blur">
+					            <tr>
 					                <td>공사기간</td>
-					                <td colspan="3">상세 견적서 요청시 표기</td>
+					                <td colspan="3" class="blur">1일/3일 = 총4일</td>
 					            </tr>
 					            <tr>
 					                <th>총 금액</th>
 					                <th colspan="3">${total_price}</th>
 					            </tr>
 	           				</table>
+	           				<h5 style="color:#777;">해당 견적서는 일부 내역과 금액만 표시되는 스탠다드 견적서이며,<br/>
+	           				"상세 견적서 요청" 을 통하여 입력 된 정보들을 기반으로 상세 견적서를 받아보실 수 있습니다.</h5>
          				</div>
         		      </div>
         			  <!-- addition end -->
@@ -511,18 +513,18 @@ textarea {
 	     					<textarea id="reqContact" class="scrollBar" name="reqContact" rows="5" cols="33"></textarea>
 	     					<div class="error-msg3" style="padding:5px 0 0 5px;font-size:12px;color:red;background-color: #F4F7FF;"></div>
 	   					</div>
-	   					<label for="agree_all">
-						  <input type="checkbox" name="agree_all" id="agree_all">
+	   					<label for="agree_all" style="cursor: pointer;">
+						  <input type="checkbox" name="agree_all" id="agree_all" style="cursor: pointer;">
 						  <span>전체동의</span>
 						</label>
 						<br/>
 						<label for="agree">
-						  <input type="checkbox" name="agree_o" id="agree_o" value="1" required>
+						  <input type="checkbox" name="agree" id="agree_o" value="1" required>
 						  <span>이용약관 동의 전체보기<strong>(필수)</strong></span>
 						</label>
 						<br/>
 						<label for="agree">
-						  <input type="checkbox" name="agree_p" id="agree_p" value="2" required>
+						  <input type="checkbox" name="agree" id="agree_p" value="2" required>
 						  <span>개인정보 취급방침 동의 전체보기<strong>(필수)</strong></span>
 						</label>
    					</div>
@@ -544,7 +546,7 @@ textarea {
               			      
               				<!--calculator_cont01-->
               				<div class="calculator_cont02 row_flex page-wrapper" style="justify-content: center">
-                				<input type="submit" id="btnSave1" value="다시 조회" style="width:40%;margin-right: 10px;" onClick="location.href='http://localhost:8080/#service'">
+                				<input type="submit" id="btnSave1" value="다시 조회" style="width:40%;margin-right: 10px;" onClick="location.href='http://localhost:8080/#ai'">
                 				<input type="button" id="btnSave2" class="trigger" value="상세 견적서 요청" style="width:40%;">
               				</div>
               				<!--calculator_cont02-->
@@ -552,7 +554,7 @@ textarea {
             			<!--calculator_cont end-->
     
             			<div class="notice" style="text-align: center;">
-              				<p>다음 금액은 부가세를 포함한 금액이며, 설치현장 환경에 따라 추가 비용(크레인, 지게차 등)이 발생할 수 있습니다.</p>
+              				<p>다음 금액은 부가세가 포함 안 된 금액이며, 설치현장 환경에 따라 추가 비용이 발생할 수 있습니다.</p>
             			</div>
             			<!--notice-->
           			</div>
@@ -576,7 +578,7 @@ textarea {
               </div>
             </footer>
           </div>
-          <div class="col-lg-3 col-12 t-0 order-0 order-lg-1 position-absolute position-lg-relative" onclick="location.href='http://localhost:8080/'">
+          <div class="col-lg-3 col-12 t-0 order-0 order-lg-1 position-absolute position-lg-relative" onclick="location.href='http://localhost:8080'">
             <div class="h-lg-100vh sticky-top py-4 sticky-area">
               <div class="bg-holder" style="background-image:url(/assets/img/sidebars/service.jpg);">
               </div>

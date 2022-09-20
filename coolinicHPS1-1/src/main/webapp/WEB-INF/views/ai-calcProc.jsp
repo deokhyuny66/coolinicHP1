@@ -83,9 +83,7 @@
 		buffer.append("설치희망일자 : "+hopeDate +"<br/>");
 		buffer.append("설치주소 : "+address +"<br/>");
 		buffer.append("요청/문의 : "+reqContact +"<br/>");
-		buffer.append("약관동의 전체 : "+agree_all +"<br/>");
-		buffer.append("이용약관 동의 : "+agree_o +"<br/>");
-		buffer.append("개인정보 동의 : "+agree_p +"<br/><br/>");
+		buffer.append("약관동의 전체 : "+agree_all +"<br/><br/>");
 		
 		buffer.append("[정보 선택] <br/>");
 		buffer.append("가로 : "+widProc +"<br/>");
@@ -121,7 +119,7 @@
 	     
 	    msg.setContent(buffer.toString(), "text/html;charset=UTF-8"); // 내용
 	    Transport.send(msg); // 전송  
-		response.sendRedirect("http://localhost:8080/#service");
+		response.sendRedirect("http://localhost:8080/#ai");
 	}catch(Exception e){
 		e.printStackTrace();
 		return;
