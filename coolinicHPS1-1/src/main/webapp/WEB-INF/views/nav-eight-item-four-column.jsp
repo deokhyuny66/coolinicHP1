@@ -368,17 +368,12 @@
 	                <div class="col-lg-6 order-lg-2 text-center align-self-center"><img class="img-fluid" src="/assets/img/detail/illustration/process-01.svg" alt="" width="400" /></div>
 	                <div class="col-lg-6 border-lg-left border-lg-bottom border-300 pb-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
 	                  <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">01</span>
-	                    <h3>왜 콜드룸을 믿고 맡길만한 전문 브랜드가 없을까요?</h3>
+	                    <h3>왜 콜드룸은 우리가 알만한 전문 브랜드가 없을까요?</h3>
 	                    <hr class="hr-short mt-3 border-300" style="margin-left: 0;width:3.4rem;"/>
-	                    콜드룸은 특별한 면허나 자격요건 없이도 시공 가능한 시장으로 운영되어 왔습니다.
-	                    <br/><br/>
-						대부분은 1인 기업의 소규모의 업체로, A/S 워런티 시스템이 가동되기도 어려운 것이 현실입니다.
-						<br/><br/> 
-						국내 약 2만 여 개사의 시공업체가 있지만 공조냉동 자격증을 갖춘 업체는 10% 채 되지 않습니다.
-						<br/><br/> 
-						시스템과 룰이 없고 기술만 있는, 사람만을 신뢰해야하는 전형적인 레몬마켓 시장입니다.
-	                    <hr class="hr-short mt-3 border-300" style="margin-left: 0;width:3.4rem;"/> 
-						<h4>신뢰있는 브랜드가 필요한 이유입니다.</h4>
+	                    콜드룸은 소규모의 전문업체가 끌고 가는 시장이기 때문입니다.<br/><br/>
+						인테리어나 전기공사, 타일 등 이런 기술이 필요한 분야의 공통점 입니다.
+						업체마다 경력과 전문성이 다르고, 노하우가 다르고, 가지고 있는 정보도 다르죠.<br/><br/>
+						고객은 좋은 업체를 찾아 헤매지만 아주 힘든일 입니다.
 	                    </p>
 	                  </div>
 	                </div>
@@ -387,58 +382,28 @@
 	                <div class="col-lg-6 border-lg-right border-lg-bottom border-300 text-center py-lg-8"><img class="img-fluid" src="/assets/img/detail/illustration/process-02.svg" alt="" width="400" /></div>
 	                <div class="col-lg-6 mt-4 mt-lg-0 mb-8 mb-lg-0 my-lg-8">
 	                  <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">02</span>
-	                    <h3>왜 A/S기간이 지나면, 책임지지 않을까요?</h3>
+	                    <h3>수요와 공급의 연결, 플랫폼</h3>
 	                    <hr class="hr-short mt-3 border-300" style="margin-left: 0;width:3.4rem;"/>
 	                    <p>
-	                    워런티 기간이 끝나면, 많은 고객들이 수리업체를 찾아 헤맵니다. 
-	                    대기업들도 마찬가지 입니다.
-	                    <br/><br/>
-	                    <h4>이유는 무엇일까요?</h4>
-	                    <hr class="hr-short mt-3 border-300" style="margin-left: 0;width:3.4rem;"/>
-						시공 업체에게 A/S보다 신규설치가 중요합니다. 
-						워런티의 책임이 끝난 사후관리는 소홀할 수 밖에 없고, 
-						콜드룸시장에서의 워런티는 <b>“잘 버티기만 하면 되는 기간”</b>으로 치부되기도 합니다.<br/><br/>
-						만약, 삼성에서 판매한 제품을 워런티가 지났다는 이유로 유상 A/S에 적극적이지 않다면 어떨까요.
+	                    시장의 불편함을 해결하는 플랫폼이 있습니다.<br/><br/>
+						플랫폼이라는 온라인 광장 안에서, 수요자의 막연함과 공급의 일거리를 해결 합니다.
+						하지만 이런 단순한 연결이 어려운 분야가 있습니다.<br/><br/>
+						건축, 저온창고(콜드룸), 덕트 등 전문성이 높은 산업의 분야가 그렇습니다.<br/><br/>
+						그렇다면 전문성 높은 산업 분야는 앞으로도 계속 전문업체를 찾기 힘들어야 할까요.
 	                    </a>
 	                  </div>
 	                </div>
 	              </div>
 	              <div class="row">
 	                <div class="col-lg-6 order-lg-2 text-center align-self-center"><img class="img-fluid" src="/assets/img/detail/illustration/process-03.svg" alt="" width="400" /></div>
-	                <div class="col-lg-6 border-lg-left border-lg-bottom border-300 py-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
+	                <div class="col-lg-6 border-lg-left border-300 py-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
 	                  <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">03</span>
-	                    <h3>왜 사후관리가 중요할까요?</h3>
+	                    <h3>물속의 문제는 물고기가 해결합니다.</h3>
 	                    <hr class="hr-short mt-3 border-300" style="margin-left: 0;width:3.4rem;"/>
 	                    <p>
-	                    큰 비용이 투입되는 건축, 인테리어, 저온설비 등은 사후관리가 중요한 분야입니다. <br/><br/>
-	                    그중 콜드룸의 워런티가 중요한 2가지 이유입니다.<br/><br/>
-	                    
-	                    <h4>첫째. 쉼없는 가동률</h4>
-	                    <hr class="hr-short mt-3 border-300" style="margin-left: 0;width:3.4rem;"/>
-						일정한 온도를 유지하기 위해 콜드룸은 쉬지 않고 가동됩니다. 
-						우리가 사용하는 제품중에 1년 365일 24시간 가동되는 제품이 과연 몇이나 있을까요?<br/><br/>
-						
-						<h4>둘째. 긴급한 A/S</h4>
-	                    <hr class="hr-short mt-3 border-300" style="margin-left: 0;width:3.4rem;"/>
-						냉동기가 고장나면 대부분 긴급으로 분류 됩니다. 보관된 제품의 가치와 직결되니까 말이죠.
-	                    </p>
-	                  </div>
-	                </div>
-	              </div>
-	              <div class="row" style="margin-bottom:7.5rem;">
-	                <div class="col-lg-6 border-lg-right border-300 text-center py-lg-8"><img class="img-fluid" src="/assets/img/detail/illustration/process-04.svg" alt="" width="400" /></div>
-	                <div class="col-lg-6 align-self-center mt-4 mt-lg-0 mt-lg-8" style="margin-bottom: 7.5rem !important;">
-	                  <div class="process-item process-item-last ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">04</span>
-	                    <h3>온도에 민감한 고객을 위해 일합니다.</h3>
-	                    <hr class="hr-short mt-3 border-300" style="margin-left: 0;width:3.4rem;"/>
-	                    <p>
-	                    쿠팡과 마켓컬리와 같은 식자재 기업에서 콜드체인에 막대한 돈을 쏟아붇는 이유도,
-	                    <br/><br/> 
-						백신을 -70℃에 꼭 유지해야 하는 이유도,
-						<br/><br/> 
-						마트에서 해썹(HACCP) 마크가 붙은 제품이 더 비싼 이유도 <b>온도는 안전이기 때문입니다.</b> 
-						<br/><br/>
-						<p style="font-size:10px;">※콜드체인 : 농장에서 식탁까지의 모든 과정에 “정온”을 유지하는 일련의 과정<p>
+	                    전문영역 안의 문제점은 전문가가 해결해야 합니다.<br/><br/>
+						업체를 찾는 방식, 사후관리의 문제, 시스템의 부재, 브랜드 부재 등
+						쿨리닉은 냉동공조 산업영역의 문제점들 해결하고 있습니다.
 	                    </p>
 	                  </div>
 	                </div>
@@ -449,19 +414,16 @@
 	      </section>
 
 
-
-
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="text-center text-sans-serif" id="digital-features-1" style="pdding-bottom:7.5rem;">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-9">
-              <h2 style="font-size:1.9rem;">쿨리닉만의 독보적인 시스템</h2>
-              <p class="lead mb-0">시스템을 개발하고 독보적인 서비스를 제공합니다</p>
+              <h2 style="font-size:1.9rem;">콜드체인 산업영역의 브랜드, 쿨리닉입니다.</h2>
             </div>
           </div>
-          <div class="row mt-6 justify-content-center">
+          <!-- <div class="row mt-6 justify-content-center">
             <div class="col-sm-6 col-lg-2 mb-4">
               <div class="h-100 border border-300"><img class="my-4 img-fluid" src="/assets/img/detail/illustration/digital-02.svg" alt="" data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}' data-zanim-trigger="scroll" />
                 <h4 class="py-3 mb-0 bg-light">A.I 자동견적 시스템</h4><br/>
@@ -495,13 +457,13 @@
             </div>
             <div class="col-sm-6 col-lg-2 mb-4">
               <div class="h-100 border border-300"><img class="my-4 img-fluid" src="/assets/img/detail/illustration/digital-02.svg" alt="" data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}' data-zanim-trigger="scroll" />
-                <h4 class="py-3 mb-0 bg-light">사후관리 시스템</h4>
+                <h4 class="py-3 mb-0 bg-light">유형별 사후관리</h4>
                 <br/>
                 <p style="font-size:15px;padding-left:10px;padding-right:10px;">
 				철저한 관리 시스템 안에서 냉동기를 체계적으로 케어하고 관리합니다.
               </div>
             </div>
-          </div>
+          </div> -->
           
 
           <!-- <div class="row mt-7 text-left inner">
@@ -575,8 +537,6 @@
       </section><!-- <section> close ============================-->
       <!-- ============================================-->
 
-
-
 	<section class="py-0 inner" id="default-cta-1" style="margin-top:7.5rem;">
 	        <div class="container">
 	          <div class="position-absolute overflow-hidden a-0">
@@ -589,24 +549,30 @@
 	            
 	        <div class="col-12 mb-5 mb-md-7 text-center">
               <h2 class="fs-3 fs-sm-4"><span class="text-underline">
-              이렇게 해결했어요.
+              쿨리닉 서비스.
               </span></h2>
             </div>
             <div class="col-lg-12 pr-lg-4 mb-6">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/bootstrap.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/calculator-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
-                    <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>왜 이렇게 견적을 받기 어려운가요?</h4>
+                    <h2 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>콜드룸 자동 견적서</h2>
+                    <hr class="hr-short" style="color:black; margin-left: 0;width:3.4rem;"/>
                   </div>
                   <div class="overflow-hidden">
                     <p data-zanim-xs='{"delay":0.2,"animation":"slide-right"}'>
-					이제 원하는 조건들만 체크하세요. 즉시, 콜드룸의 견적을 확인할 수 있습니다.
+					저온설비는 예산 산정을 위해서는 견적이 필요하지만 그 견적을 받는 일은 꽤나 불편합니다.<br/><br/>
+					업체마다 이야기도 다르고 판단하기 어렵습니다.<br/><br/>
+					주문 제작 형태의 모든것들이 그렇듯 콜드룸(저온창고)의 견적을 받는건 꽤나 까다롭습니다.<br/><br/>
+					쿨리닉의 자동 견적서는 빅데이터를 기반 알고리즘으로 견적을 산출합니다.<br/><br/>
+					원하시는 사이즈와 온도대, 8가지의 요구 조건만 입력하면 견적을 확인할 수 있습니다.<br/><br/>
+					20년의 기간 동안, 약 4만여개의 콜드룸 면적과 온도 대비 냉동기 선정 이력 데이터를 기준으로 합니다.<br/><br/>
+					자동견적서는 콜드룸 제작의 기준을 제시합니다.
 					</p>
                   </div>
                   <div>
 	                  <a class="btn btn-primary" href="#">
-	                  	<span class="fas fa-calculator mr-3" data-fa-transform="grow-8"></span>
 	                  	A.I 자동견적서
 	                  </a>
                   </div>
@@ -615,21 +581,23 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-6">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/bootstrap.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/warehouse-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
-                    <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>왜 판매자들도 냉동기 정보를 관리하지 않을까요?</h4>
+                    <h2 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>가치를 보관하는 금고, 콜드룸</h2>
+                    <hr class="hr-short" style="color:black; margin-left: 0;width:3.4rem;"/>
                   </div>
                   <div class="overflow-hidden">
                     <p data-zanim-xs='{"delay":0.2,"animation":"slide-right"}'>
-					휘발성으로 사라지는 냉동기 정보, 고장 수리 내역 등의 방대한 정보를 보관하기는 어렵습니다.
-					수리 시간과 관리 비용도 절감과 어디서든 제품을 식별할 수 있고, 고장 시 수리대응에 빠릅니다.
+					쿨리닉이 만드는 콜드룸은 매뉴얼에 따라 제작 됩니다.<br/><br/>
+					품질의 편차가 없도록 시공사만의 노하우나, 잔기술은 없습니다.<br/><br/>
+					감리 시스템을 통해 설비를 점검하고 감독합니다. <br/><br/>
+					그래서 우리는 국내 최대 워린티를 보장할 수 있습니다.
 					</p>
                   </div>
                   <div>
 	                  <a class="btn btn-primary" href="#">
-	                  <span class="fas fa-notes-medical mr-3" data-fa-transform="grow-8"></span>
-	                  	주민번호 RMS
+	                  	저온저장고 자세히
 	                  </a>
                   </div>
                 </div>
@@ -637,19 +605,26 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-6">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/icon-target.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/map-marked-alt-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
-                    <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>이렇게 긴급한 A/S에 왜 통합 시스템이 없을까요?</h4>
+                    <h2 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>앞보다는 뒤를 보는 서비스</h2>
+                    <hr class="hr-short" style="color:black; margin-left: 0;width:3.4rem;"/>
                   </div>
                   <div class="overflow-hidden">
                     <p data-zanim-xs='{"delay":0.2,"animation":"slide-right"}'>
-                    콜센터, 비대면 접수, 모바일 앱, 원하시는 모든 채널에서 A/S 신청이 가능합니다.
+                    사후관리에 진심입니다.<br/><br/>
+					워런티 기간만 지나면 스리슬쩍 사라지면 안됩니다.<br/><br/> 
+					콜드룸은 최소 10년을 바라보고 구매를 선택하니까요.<br/><br/>
+					콜드룸은 설치가 30% 사후관리가 70% 입니다.<br/><br/> 
+					그래서일겁니다. 우리가 A/S 시스템을 가장 먼저 만든 이유.<br/><br/>
+					우선, 대한민국 전역에서 활동하고 있는 전문가들을 파트너로 모았고 경력과 전문분야 등 조금은 까다롭게 검증했습니다. <br/><br/>
+					그리고 콜택시처럼 위치기반으로 매칭할 수 있는 서비스를 개발해서 지난 3년간 4천3백 여건의 A/S를 처리했습니다.<br/><br/>
+					언제 어디서든 전화 없이 A/S를 요청할 수 있는 유일한 서비스 입니다.
                     </p>
                   </div>
                   <div>
 	                  <a class="btn btn-primary" href="#">
-	                  <span class="fas fa-street-view mr-3" data-fa-transform="grow-8"></span>
 	                  	위치기반 A/S</a>
                   </div>
                 </div>
@@ -657,42 +632,47 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-6">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/icon-target.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/tasks-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
-                    <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>왜 수리비용은 모두 제각각인가요?</h4>
+                    <h2 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>사후관리를 잘 하려면 정보가 필요했습니다.</h2>
+                    <hr class="hr-short" style="color:black; margin-left: 0;width:3.4rem;"/>
                   </div>
                   <div class="overflow-hidden">
                     <p data-zanim-xs='{"delay":0.2,"animation":"slide-right"}'>
-                    2만여개의 냉동기 부품과 수리유형별 공임, 데이터를 기반으로 기준표에 의거한 수리와 
-                    즉흥적인 금액이 아닌 매뉴얼에 의한 합리적인 비용이 산정 됩니다.
+                    주문제작 제품의 단점은 잊혀진다라는 것이었요. <br/><br/>
+					시간이 지나면 잊혀지고, 결국 아무도 기억하지 못하죠.<br/><br/>
+					잘 관리하려고 하면 정보가 필요했습니다. <br/><br/>
+					어떻게 제작 했었고, 어떤 고장 이력이 있는지, 어떻게 시공했고 어떤 특이사항이 있는지 말이죠.<br/><br/>
+					RMS는 모든 정보를 1분만에 확인할 수 있는 냉동기의 주민번호 시스템 입니다.
                     </p>
                   </div>
                   <div>
 	                  <a class="btn btn-primary" href="#">
-	                  	<span class="fas fa-list-ol mr-3" data-fa-transform="grow-8"></span>
-	                  	A/S 기준단가표</a>
+	                  	RMS 자세히보기</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-lg-12 pr-lg-4 mb-6">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/favorites-button.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/historys-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
-                    <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>왜 냉동기 관리는 언제나 주먹구구 식일까요?</h4>
+                    <h2 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>골칫거리를 해결합니다.</h2>
+                    <hr class="hr-short" style="color:black; margin-left: 0;width:3.4rem;"/>
                   </div>
                   <div class="overflow-hidden">
                     <p data-zanim-xs='{"delay":0.2,"animation":"slide-right"}'>
-                    월 2회 정기점검, 클리닝, 점검 포인트로 관리되는 쿨리닉 케어프로그램은 비즈니스변수에 대해 완벽하게 통제합니다.
-				    기업의 특성에 맞는 유형별 유지관리 시스템을 선택할 수 있습니다.
+                    콜드룸 내 제상의 문제는 모두의 골칫거리 였습니다.<br/><br/>
+					착상 타이밍을 몰라, 어쩔 수 없이 실행되던 제상 작업..
+					정확한 타이밍을 잡고 싶었습니다.<br/><br/>
+					3년간의 연구로 우리는 최적의 제상 타이밍 서비스를 제공합니다.
                     </p>
                   </div>
                   <div>
 	                  <a class="btn btn-primary" href="#">
-	                  <span class="fas fa-toolbox mr-3" data-fa-transform="grow-8"></span>
-	                  	유형별 사후관리</a>
+	                  	ADS 자세히보기</a>
                   </div>
                 </div>
               </div>
@@ -780,17 +760,6 @@
 	          </div>
 	        </div>end of .container
 	      </section> -->
-
-	   <section class="text-center text-sans-serif" id="digital-partners">
-        <div class="container" style="padding-top:7.5rem;">
-          <div class="row justify-content-center">
-            <div class="col-lg-7">
-              <h2 class="mb-2">쿨리닉은 냉동공조 산업의 시스템을 만들어 갑니다.</h2>
-            </div>
-          </div>
-        </div><!-- end of .container-->
-      </section>
-
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="text-center bg-black text-sans-serif inner" id="digital-contact" style="padding-top:7.5rem;pdding-bottom:7.5rem;margin-top:7.5rem;">
@@ -1160,7 +1129,7 @@
 		                  </div>
 		                  
 		                  <div class="media mb-5 card-service" data-zanim-timeline="{}">
-		                    <div class="overflow-hidden"><img class="mr-3 mr-sm-4" src="/assets/img/detail/icons/icon-target.svg" alt="" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+		                    <div class="overflow-hidden"><img class="mr-3 mr-sm-4" src="/assets/img/detail/icons/user-shield-solid.svg" alt="" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
 		                    <div class="media-body">
 		                      <div class="overflow-hidden">
 		                        <h4 class="mb-2" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
@@ -1175,7 +1144,7 @@
 		                    </div>
 		                  </div>
 		                  <div class="media mb-5 card-service" data-zanim-timeline="{}">
-		                    <div class="overflow-hidden"><img class="mr-3 mr-sm-4" src="/assets/img/detail/icons/icon-line-chart.svg" alt="" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+		                    <div class="overflow-hidden"><img class="mr-3 mr-sm-4" src="/assets/img/detail/icons/memory-solid.svg" alt="" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
 		                    <div class="media-body">
 		                      <div class="overflow-hidden">
 		                        <h4 class="mb-2" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
@@ -1190,7 +1159,7 @@
 		                    </div>
 		                  </div>
 		                  <div class="media mb-5 card-service" data-zanim-timeline="{}">
-		                    <div class="overflow-hidden"><img class="mr-3 mr-sm-4" src="/assets/img/detail/icons/icon-coding.svg" alt="" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+		                    <div class="overflow-hidden"><img class="mr-3 mr-sm-4" src="/assets/img/detail/icons/hand-scissors-solid.svg" alt="" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
 		                    <div class="media-body">
 		                      <div class="overflow-hidden">
 		                        <h4 class="mb-2" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
@@ -1651,7 +1620,7 @@
             </div>
             <div class="col-lg-5 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/bootstrap.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/city-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>체계적으로 냉동기를 관리하고 싶은 기업</h4>
@@ -1666,7 +1635,7 @@
             </div>
             <div class="col-lg-5 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/icon-target.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/building-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>유지보수 전문 업체</h4>
@@ -1749,7 +1718,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/bootstrap.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/memory-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>모든정보 기억</h4>
@@ -1764,7 +1733,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/bootstrap.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/tools-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>수리정보 기록</h4>
@@ -1779,7 +1748,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/icon-target.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/database-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>정보유지</h4>
@@ -1794,7 +1763,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/icon-target.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/warehouse-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>다수관리 용이</h4>
@@ -1809,7 +1778,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/favorites-button.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/boxes-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>쿨리닉 케어</h4>
@@ -2200,7 +2169,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/bootstrap.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/sort-amount-down-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>70%이상 절감</h4>
@@ -2215,7 +2184,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/bootstrap.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/temperature-low-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>온도상승 최소화</h4>
@@ -2230,7 +2199,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/icon-target.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/sort-amount-up-alt-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>히터수명 최대</h4>
@@ -2245,7 +2214,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/icon-target.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/box-open-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>제품가치 상승</h4>
@@ -2260,7 +2229,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/favorites-button.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/business-time-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>보관기간 상승</h4>
@@ -2275,7 +2244,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/favorites-button.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/dumpster-fire-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>위험성 감소</h4>
@@ -2290,7 +2259,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/favorites-button.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/hand-holding-usd-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>비용감소</h4>
@@ -2305,7 +2274,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/favorites-button.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/wave-square-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>탄소배출량 감소</h4>
@@ -2941,7 +2910,7 @@
             </div>
             <div class="col-lg-5 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/bootstrap.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/warehouse-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>수천수억원의 가치가 있는 콜드룸이지만..</h4>
@@ -2957,7 +2926,7 @@
             </div>
             <div class="col-lg-5 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/icon-target.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/search-location-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>매번 수리 업체를 찾지만..</h4>
@@ -2973,7 +2942,7 @@
             </div>
             <div class="col-lg-5 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/favorites-button.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/frown-open-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>속은 타들어가고 있지만..</h4>
