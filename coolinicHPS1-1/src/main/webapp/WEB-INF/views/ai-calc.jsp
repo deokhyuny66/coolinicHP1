@@ -15,15 +15,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
- <link href="/assets/css/main/slides.css" rel="stylesheet" type="text/css">
- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
- <link href="/assets/css/theme.css" rel="stylesheet">
- <link href="/assets/lib/prismjs/prism.css" rel="stylesheet">
- <link href="/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
- <link href="/assets/css/detail/comm_detail.css" rel="stylesheet">
- <link href="/assets/css/calc/commons.css" rel="stylesheet" type="text/css">
- <link href="/assets/css/calc/est.css" rel="stylesheet" type="text/css">
- <link href="/assets/css/calc/comm_calc.css" rel="stylesheet" type="text/css">
+ <link href="/assets/css/main/slides.css?ver=1" rel="stylesheet" type="text/css">
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css?ver=1" rel="stylesheet" type="text/css">
+ <link href="/assets/css/theme.css?ver=1" rel="stylesheet">
+ <link href="/assets/lib/prismjs/prism.css?ver=1" rel="stylesheet">
+ <link href="/assets/lib/loaders.css/loaders.min.css?ver=1" rel="stylesheet">
+ <link href="/assets/css/detail/comm_detail.css?ver=1" rel="stylesheet">
+ <link href="/assets/css/calc/commons.css?ver=1" rel="stylesheet" type="text/css">
+ <link href="/assets/css/calc/est.css?ver=1" rel="stylesheet" type="text/css">
+ <link href="/assets/css/calc/comm_calc.css?ver=1" rel="stylesheet" type="text/css">
  <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
 <style>
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);

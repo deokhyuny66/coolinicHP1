@@ -18,19 +18,20 @@
     <meta name="msapplication-TileImage" content="/assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="/assets/css/main/slides.css" rel="stylesheet" type="text/css">  
-    <link href="/assets/css/theme.css" rel="stylesheet">
-    <link href="/assets/lib/prismjs/prism.css" rel="stylesheet">
-    <link href="/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
-    <link href="/assets/css/detail/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="/assets/css/detail/comm_detail.css" rel="stylesheet">
-    <link href="/assets/lib/remodal/remodal.css" rel="stylesheet">
-    <link href="/assets/lib/remodal/remodal-default-theme.css" rel="stylesheet">
-    <link href="/assets/lib/owl.carousel/owl.carousel.css" rel="stylesheet">
-    <link href="/assets/css/detail/lightbox.min.css" rel="stylesheet">
-    <link href="/assets/css/calc/commons.css" rel="stylesheet" type="text/css">
-    <link href="/assets/css/calc/est.css" rel="stylesheet" type="text/css">
-    <link href="/assets/css/calc/comm_calc.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/main/slides.css?ver=1" rel="stylesheet" type="text/css">  
+    <link href="/assets/css/theme.css?ver=1" rel="stylesheet">
+    <link href="/static/assets/css/theme.css?ver=1" rel="stylesheet">
+    <link href="/assets/lib/prismjs/prism.css?ver=1" rel="stylesheet">
+    <link href="/assets/lib/loaders.css/loaders.min.css?ver=1" rel="stylesheet">
+    <link href="/assets/css/detail/jquery.fancybox.min.css?ver=1" rel="stylesheet">
+    <link href="/assets/css/detail/comm_detail.css?ver=1" rel="stylesheet">
+    <link href="/assets/lib/remodal/remodal.css?ver=1" rel="stylesheet">
+    <link href="/assets/lib/remodal/remodal-default-theme.css?ver=1" rel="stylesheet">
+    <link href="/assets/lib/owl.carousel/owl.carousel.css?ver=1" rel="stylesheet">
+    <link href="/assets/css/detail/lightbox.min.css?ver=1" rel="stylesheet">
+    <link href="/assets/css/calc/commons.css?ver=1" rel="stylesheet" type="text/css">
+    <link href="/assets/css/calc/est.css?ver=1" rel="stylesheet" type="text/css">
+    <link href="/assets/css/calc/comm_calc.css?ver=1" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link
@@ -554,7 +555,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-6">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/calculator-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/calculate.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h2 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>콜드룸 자동 견적서</h2>
@@ -581,7 +582,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-6">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/warehouse-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/warehouse.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h2 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>가치를 보관하는 금고, 콜드룸</h2>
@@ -605,7 +606,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-6">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/map-marked-alt-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/pin_drop.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h2 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>앞보다는 뒤를 보는 서비스</h2>
@@ -632,7 +633,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-6">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/tasks-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/fact_check.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h2 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>사후관리를 잘 하려면 정보가 필요했습니다.</h2>
@@ -656,7 +657,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-6">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/historys-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/update.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h2 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>골칫거리를 해결합니다.</h2>
@@ -1129,7 +1130,7 @@
 		                  </div>
 		                  
 		                  <div class="media mb-5 card-service" data-zanim-timeline="{}">
-		                    <div class="overflow-hidden"><img class="mr-3 mr-sm-4" src="/assets/img/detail/icons/user-shield-solid.svg" alt="" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+		                    <div class="overflow-hidden"><img class="mr-3 mr-sm-4" src="/assets/img/detail/icons/safety_check.svg" alt="" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
 		                    <div class="media-body">
 		                      <div class="overflow-hidden">
 		                        <h4 class="mb-2" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
@@ -1144,7 +1145,7 @@
 		                    </div>
 		                  </div>
 		                  <div class="media mb-5 card-service" data-zanim-timeline="{}">
-		                    <div class="overflow-hidden"><img class="mr-3 mr-sm-4" src="/assets/img/detail/icons/memory-solid.svg" alt="" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+		                    <div class="overflow-hidden"><img class="mr-3 mr-sm-4" src="/assets/img/detail/icons/memory.svg" alt="" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
 		                    <div class="media-body">
 		                      <div class="overflow-hidden">
 		                        <h4 class="mb-2" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
@@ -1159,7 +1160,7 @@
 		                    </div>
 		                  </div>
 		                  <div class="media mb-5 card-service" data-zanim-timeline="{}">
-		                    <div class="overflow-hidden"><img class="mr-3 mr-sm-4" src="/assets/img/detail/icons/hand-scissors-solid.svg" alt="" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+		                    <div class="overflow-hidden"><img class="mr-3 mr-sm-4" src="/assets/img/detail/icons/exposure_plus.svg" alt="" width="50" data-zanim-xs="{&quot;delay&quot;:0.2,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
 		                    <div class="media-body">
 		                      <div class="overflow-hidden">
 		                        <h4 class="mb-2" data-zanim-xs="{&quot;delay&quot;:0.1,&quot;animation&quot;:&quot;slide-right&quot;}" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
@@ -1200,7 +1201,7 @@
 						  고장이 났을때 잘 대응할 수 있는 즉, 사후관리에 최적화된 콜드룸을 만들고 있습니다.
 		                  </p>
 		                  <div class="row mt-5">
-		                    <div class="col-6"><img class="rounded img-fluid" src="/assets/img/detail/about-02.jpg" alt="" data-zanim-xs='{"delay":0.6,"animation":"zoom-in"}' data-zanim-trigger="scroll" /></div>
+		                    <div class="col-6"><img class="rounded img-fluid" src="/assets/img/detail/about-01.jpg" alt="" data-zanim-xs='{"delay":0.6,"animation":"zoom-in"}' data-zanim-trigger="scroll" /></div>
 		                    <div class="col-6"><img class="rounded img-fluid" src="/assets/img/detail/about-01.jpg" alt="" data-zanim-xs='{"delay":0.7,"animation":"zoom-in"}' data-zanim-trigger="scroll" /></div>
 		                  </div>
 		                  
@@ -1231,7 +1232,7 @@
 							현장에서 확인할수 밖에 없었던 콜드룸의 정보는 어디서든 단 1분이면 확인할 수 있습니다.
 		                  </p>
 		                  <div class="row mt-5">
-		                    <div class="col-6"><img class="rounded img-fluid" src="/assets/img/detail/about-02.jpg" alt="" data-zanim-xs='{"delay":0.6,"animation":"zoom-in"}' data-zanim-trigger="scroll" /></div>
+		                    <div class="col-6"><img class="rounded img-fluid" src="/assets/img/detail/about-01.jpg" alt="" data-zanim-xs='{"delay":0.6,"animation":"zoom-in"}' data-zanim-trigger="scroll" /></div>
 		                    <div class="col-6"><img class="rounded img-fluid" src="/assets/img/detail/about-01.jpg" alt="" data-zanim-xs='{"delay":0.7,"animation":"zoom-in"}' data-zanim-trigger="scroll" /></div>
 		                  </div>
 		                  
@@ -1260,7 +1261,7 @@
 						  불가능을 가능하게 한 관리 솔루션, 위치기반의 A/S 시스템과 같은 대체불가능한 기술력에 대한 자신감 입니다.
 		                  </p>
 		                  <div class="row mt-5" style="margin-bottom: 7.5rem;">
-		                    <div class="col-6"><img class="rounded img-fluid" src="/assets/img/detail/about-02.jpg" alt="" data-zanim-xs='{"delay":0.6,"animation":"zoom-in"}' data-zanim-trigger="scroll" /></div>
+		                    <div class="col-6"><img class="rounded img-fluid" src="/assets/img/detail/about-01.jpg" alt="" data-zanim-xs='{"delay":0.6,"animation":"zoom-in"}' data-zanim-trigger="scroll" /></div>
 		                    <div class="col-6"><img class="rounded img-fluid" src="/assets/img/detail/about-01.jpg" alt="" data-zanim-xs='{"delay":0.7,"animation":"zoom-in"}' data-zanim-trigger="scroll" /></div>
 		                  </div>
 		                </div>
@@ -1620,7 +1621,7 @@
             </div>
             <div class="col-lg-5 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/city-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/corporate_fare.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>체계적으로 냉동기를 관리하고 싶은 기업</h4>
@@ -1635,7 +1636,7 @@
             </div>
             <div class="col-lg-5 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/building-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/construction.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>유지보수 전문 업체</h4>
@@ -1718,7 +1719,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/memory-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/memory.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>모든정보 기억</h4>
@@ -1733,7 +1734,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/tools-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/constructiona.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>수리정보 기록</h4>
@@ -1748,7 +1749,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/database-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/database.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>정보유지</h4>
@@ -1763,7 +1764,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/warehouse-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/warehouse.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>다수관리 용이</h4>
@@ -1778,7 +1779,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/boxes-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/all_inbox.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>쿨리닉 케어</h4>
@@ -2169,7 +2170,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/sort-amount-down-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/downloading.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>70%이상 절감</h4>
@@ -2184,7 +2185,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/temperature-low-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/thermostat_F.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>온도상승 최소화</h4>
@@ -2199,7 +2200,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/sort-amount-up-alt-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/moving.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>히터수명 최대</h4>
@@ -2214,7 +2215,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/box-open-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/package.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>제품가치 상승</h4>
@@ -2229,7 +2230,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/business-time-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/work_history.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>보관기간 상승</h4>
@@ -2244,7 +2245,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/dumpster-fire-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/fireplace.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>위험성 감소</h4>
@@ -2259,7 +2260,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/hand-holding-usd-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/price_check.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>비용감소</h4>
@@ -2274,7 +2275,7 @@
             </div>
             <div class="col-lg-12 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/wave-square-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/downloadin.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body" style="text-align:left;">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>탄소배출량 감소</h4>
@@ -2910,7 +2911,7 @@
             </div>
             <div class="col-lg-5 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/warehouse-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/warehouse.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>수천수억원의 가치가 있는 콜드룸이지만..</h4>
@@ -2926,7 +2927,7 @@
             </div>
             <div class="col-lg-5 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/search-location-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/person_search.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>매번 수리 업체를 찾지만..</h4>
@@ -2942,7 +2943,7 @@
             </div>
             <div class="col-lg-5 pr-lg-4 mb-4">
               <div class="media" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/frown-open-solid.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
+                <div class="overflow-hidden consize"><img class="media-img mr-3 mr-sm-4 consize-img" src="/assets/img/detail/icons/sentiment_dissatisfied.svg" alt="" data-zanim-xs='{"delay":0.2,"animation":"slide-right"}' /></div>
                 <div class="media-body">
                   <div class="overflow-hidden">
                     <h4 class="mb-2" data-zanim-xs='{"delay":0.1,"animation":"slide-right"}'>속은 타들어가고 있지만..</h4>
